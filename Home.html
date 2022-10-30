@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- logo and tab name  -->
+  <head>
+    <title>CAN SAVE</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="Images/Thumbnail.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <meta
+      name="description"
+      content="Canada is one of the major desination of animals 
+      due to its wide spread area and climate. Every life is important 
+      in the world , so it is our sole responsibility to protect them 
+      from getting extincted and make sure their survival."
+    />
+    <meta
+      name="keywords"
+      content="Canada,save,animal,save Canada,protect 
+      animals,responsibility,NGO,Animal protection act,
+      Raindeer,whales,rabits,dogs,moose,beevers"
+    />
+    <link rel="stylesheet" href="CSS/home.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link rel="stylesheet" href="CSS/common.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+  </head>
+  <body>
+    <!-- banner image and details -->
+    <div class="navclass"></div>
+    <section style="background-image: url(Images/test.png);background-size:cover;background-position: right;background-attachment:inherit; " >
+        <div class="banner">
+            <div class="content">
+              <h1 class="main_head"> SAVE ANIMALS 
+              SAVE NATURE</h1>
+             
+              <p class="paragraph bannertext">
+              Canada is the secound largest country in the world in case of the available area. As a result it also consistes of wide verity
+            of flora and fauna.
+            A great range of plant and animal life characterizes the vast area of
+            Canada, with its varied geographic and climatic zones.
+              </p>
+                <button class="primary_button">About us</button>
+            </div> 
+    </div>
+    </section>
+    <div class="home">
+      <!-- side navigation -->
+      <!-- To do : need to do quick scroll -->
+      <section>
+        <div class="divistion">
+        <div class="navigation">
+          <ul class="sidenav">
+            <li><a href="#" class="theriary_head">SAVE ANIMAL <i class="fa fa-angle-right"></i></a></li>
+            <li><a href="#" class="theriary_head">NEWS & FEEDS<i class="fa fa-angle-right"></i></a></li>
+            <li><a href="#" class="theriary_head">LOCATION<i class="fa fa-angle-right"></i></a></li>
+          </ul>
+        </div>
+        
+        <!-- body of the home page -->
+        <article>
+          <!-- first section containing the importantce of wild life conservation -->
+          <div class="first-content"> 
+            <h2 class="primary_head" style="text-align:end;color: white;">LET US UNITE</h2>
+            <h2 class="secoundary_head" style="text-align:end;color: white;">AND SAVE ANIMALS</h2>
+            <div class="common_conetent">
+              <div class="animalcontent">
+                <p class="paragraph secound_text" style="color:white">
+                  What do you understand by the term ‘saving animals’? 
+                  Saving animals means conserving animals as well as their habitats. 
+                  Most animals have become endangered due to the destruction of their habitats. 
+                  So if you want your next generations to see some exotic animals, then it’s time you step into your role of saving animals. </p>
+              </div>
+              <div class="animalsort">
+                <img src="Images/My project (3).png" height="340px" width="500px" style=" display: grid;
+                justify-content: space-around;">
+
+              </div>
+              
+        </div>
+        </div>
+
+        <div class="secound-content"> 
+          <h2 class="primary_head" >LET SEE</h2>
+          <h2 class="secoundary_head" >WHAT WE GOT</h2>  
+      </div>
+      <!-- imported news and feeds from a septrate html page  -->
+      <div class="socialclass">
+
+      </div>
+     
+
+      <div class="third-content"> 
+        <h2 class="primary_head" >LET LOCATE</h2>
+        <h2 class="secoundary_head" >ANIMALS</h2>
+
+        <!-- used image map to show the details of the animala and count on hovering each province -->
+        <!-- To do : need to more province -->
+          <P class="paragraph"style="text-align:end;margin-bottom:-30px;font-weight:500;color:orange;">* Hover on the circle to know the count of the animal over that region</P>
+
+          </div>
+
+        <div class = "last_content">
+          <img src="Images/5f83a433c1dafe79d676027f_Social-Gathering-Restrictions-in-Canada-Map-HEADER.jpeg" height="500px" width="700px">
+              
+          <div class="hotspot" style="top: 37vh; left: 12vw; height: 30px; width: 30px;"></div>
+          <div>
+              <div class="wash"></div>
+              <div style="position: absolute; top: 0; left:24px ;">
+                <div class="animal_box">
+                  <h2 class="theriary_head" style="color:rgb(255, 111, 0);font-size: large;">BRITISH COLOMBIA</h2>
+                  <h2 class="theriary_head" style="color:rgb(255, 255, 255);">Animal : BEEVER</h2>
+                  <h2 class="theriary_head" style="color:rgb(144, 19, 19);">Count : 34</h2>
+
+                </div>
+              </div>
+          </div>
+              
+          <div class="hotspot" style="top: 41vh; left: 38vw; height: 30px; width: 30px;"></div>
+          <div>
+              <div class="wash"></div>
+              <div style="position: absolute; top: 0; left: 24px;">
+                <div class="animal_box">
+                  <h2 class="theriary_head" style="color:rgb(255, 111, 0);font-size: large;">MANITOBA</h2>
+                  <h2 class="theriary_head" style="color:rgb(255, 255, 255);">Animal : MOOSE</h2>
+                  <h2 class="theriary_head" style="color:rgb(144, 19, 19);">Count : 50</h2>
+
+                </div>
+              </div>
+          </div>
+      </div>
+      </div>
+        </article>
+      </div>
+      </section>
+    </div>
+    <!-- imported footer from footer.html -->
+    <div class="footerclass"></div>
+  </body>
+</html>
+
+<!-- java script to import footer navigation and news and updated to the home page -->
+<script type="text/javascript">
+    $(function(){
+        $(".navclass").load("navigation.html");
+     } );
+     $(function(){
+        $(".footerclass").load("footer.html");
+     } );   
+     $(function(){
+        $(".socialclass").load("newsAndFeeds.html");
+     } );   
+</script>
