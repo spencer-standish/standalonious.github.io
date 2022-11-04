@@ -1,4 +1,4 @@
-## Assignment Name: : Project Task List 7
+## Assignment Name: : Project Task List 8
 
 
 ## Name: George Devid John Thekkineth
@@ -7,7 +7,7 @@
 
 ## Tasks
 
-- [x] Responsive Layout with  HTML and CSS for your second project feature
+- [x] Responsive Layout with  HTML and CSS for your third project feature
 
 
 ## Leaning curve and challenges

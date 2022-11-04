@@ -1,0 +1,215 @@
+/* -----desktop view ----- */
+@media only screen and (min-width: 760px) {
+  body {
+    margin: 0 auto;
+  }
+  .banner {
+    margin-top: 6rem;
+    display: flex;
+  }
+  .banner img {
+    width: 60%;
+  }
+  .donatetext .secound_text {
+    width: 95%;
+  }
+  .banner h1 {
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    width: 30%;
+    font-size: 2.5rem;
+  }
+  .common_conetent {
+    display: flex;
+  }
+  iframe {
+    width: 36rem;
+    height: 20rem;
+  }
+  .first-content {
+    padding: 60px 80px;
+  }
+  .counts strong {
+    font-size: 1.5rem;
+    font-family: "Gill Sans";
+    color: rgb(47, 71, 132);
+  }
+  .counts span {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: Verdana;
+    color: rgb(47, 71, 132);
+    vertical-align: middle;
+  }
+  .counts li {
+    padding: 30px 20px;
+    width: 30rem;
+    border-bottom: groove;
+  }
+  .counts li span {
+    vertical-align: top;
+    padding-left: 20px;
+  }
+  .animalsort {
+    display: flex;
+    align-items: center;
+  }
+  .fistlist {
+    border-bottom: groove;
+    border-top: groove;
+  }
+  .donateimage {
+    width: 40%;
+    height: 38rem;
+  }
+  .donatetext {
+    width: 60%;
+    padding: 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background-color: rgb(35, 73, 126);
+  }
+  .donationArea {
+    display: flex;
+  }
+  .domestic img {
+    width: 40rem;
+  }
+  .domestic {
+    padding: 20px 80px;
+    display: flex;
+  }
+  .factslist {
+    display: flex;
+  }
+  .facts {
+    padding: 20px 80px;
+    display: flex;
+    flex-direction: column;
+  }
+  .common_conetent .secound_text {
+    text-align: start;
+    width: 80%;
+  }
+  .footerclass {
+    position: relative;
+    margin-top: 25rem;
+  }
+}
+/* ------ mobile view--------- */
+@media only screen and (max-width: 760px) {
+  body {
+    margin: 0 auto;
+  }
+  .primary_head {
+    text-align: center;
+  }
+  .secoundary_head {
+    text-align: center;
+  }
+  .banner {
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .banner img {
+    margin-top: 50px;
+  }
+  .banner h1 {
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    padding: 40px 10px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .common_conetent .secound_text {
+    text-align: center;
+    width: 100%;
+  }
+
+  .youtube {
+    display: flex;
+    justify-content: space-around;
+  }
+  .first-content {
+    padding: 20px 20px;
+  }
+  .fact_details {
+    color: rgba(22, 21, 26, 0.841);
+    font-size: 1rem;
+    font-family: sans-serif;
+  }
+  .counts strong {
+    font-size: 1.6rem;
+    font-family: "Gill Sans";
+    color: rgb(47, 71, 132);
+  }
+  .counts {
+    padding: 0;
+  }
+  .counts span {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: Verdana;
+    color: rgb(47, 71, 132);
+    vertical-align: middle;
+  }
+  .counts li {
+    padding: 30px 10px;
+    border-bottom: groove;
+  }
+  .counts li span {
+    vertical-align: top;
+    padding-left: 20px;
+  }
+  .animalsort {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .fistlist {
+    border-bottom: groove;
+    border-top: groove;
+  }
+  .donateimage {
+    height: 30rem;
+  }
+  .donatetext {
+    padding: 20px;
+    background-color: rgb(35, 73, 126);
+  }
+  #domestic-image {
+    display: flex;
+    justify-content: center;
+  }
+  .domestic img {
+    width: 20rem;
+  }
+  .donatetext .secound_text {
+    text-align: center;
+  }
+  .donationArea {
+    display: flex;
+  }
+  .domestic {
+    padding: 20px;
+  }
+  .domestic p {
+    text-align: center;
+  }
+  .factslist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .facts {
+    padding: 20px;
+  }
+  .footerclass {
+    position: relative;
+    margin-top: 33rem;
+  }
+}
