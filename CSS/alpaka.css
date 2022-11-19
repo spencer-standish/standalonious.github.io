@@ -93,10 +93,10 @@
     text-align: start;
     width: 80%;
   }
-  .footerclass {
+  /* .footerclass {
     position: relative;
     margin-top: 25rem;
-  }
+  } */
 }
 /* ------ mobile view--------- */
 @media only screen and (max-width: 760px) {
@@ -110,12 +110,12 @@
     text-align: center;
   }
   .banner {
-    margin-top: 6rem;
+    /* margin-top: 6rem; */
     display: flex;
     flex-direction: column;
   }
   .banner img {
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
   .banner h1 {
     margin: 0 auto;
@@ -208,8 +208,8 @@
   .facts {
     padding: 20px;
   }
-  .footerclass {
+  /* .footerclass {
     position: relative;
     margin-top: 33rem;
-  }
+  } */
 }

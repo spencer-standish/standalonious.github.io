@@ -1,11 +1,13 @@
+@media only screen and (min-width: 760px) {
 .theriary_head {
   color: white;
   margin-left: 2rem;
 }
 footer .footer {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   bottom: 0;
+  margin-top: 20px;
   width: 100%;
   color: white;
   padding: 0.6em 0em 3.2em;
@@ -38,9 +40,7 @@ a:hover,
 a:focus {
   color: rgb(85, 161, 136);
 }
-a:visited {
-  color: rgb(67, 156, 126);
-}
+
 .fa-facebook::before {
   color: white;
   font-size: 25px;
@@ -67,7 +67,13 @@ a {
   font-size: 0.8em;
   line-height: 20px;
 }
-
+.overlay{
+  visibility: hidden;
+}
+.opencalss{
+  visibility: hidden;
+}
+}
 /* -----mobile view ----- */
 @media only screen and (max-width: 760px) {
   .theriary_head {
@@ -79,7 +85,7 @@ a {
     width:0;
   }
   footer .footer {
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     bottom: 0;
     width: 100%;
@@ -114,9 +120,7 @@ a {
   a:focus {
     color: rgb(85, 161, 136);
   }
-  a:visited {
-    color: rgb(67, 156, 126);
-  }
+
   .fa-facebook::before {
     color: white;
     font-size: 25px;

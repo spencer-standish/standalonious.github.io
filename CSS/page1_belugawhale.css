@@ -1,0 +1,196 @@
+/* ----- desktop view ------- */
+html {
+  width: fit-content;
+  margin-left: 10px;
+  margin-right: 13px;
+  font-family: cursive;
+  background-image: url(../images/beluga/beluga-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.intropara {
+  flex-basis: 50em;
+}
+.intropara p {
+  color: black;
+}
+.box {
+  flex-basis: 20em;
+  padding: 40px 0;
+}
+.distribution {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 32px;
+  flex-direction: row-reverse;
+}
+.distpara {
+  background-color: #0885b6;
+  border-radius: 9px;
+}
+.habitat {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  column-gap: 26px;
+}
+.habitatpara {
+  background-color: #0a2446bf;
+  border-radius: 9px;
+}
+.population {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 50px 5px;
+  column-gap: 32px;
+}
+.poppara {
+  background-color: #36647c;
+  border-radius: 9px;
+}
+img {
+  width: 540px;
+  height: 310px;
+  border-radius: 9px;
+}
+#mainimage {
+  width: 670px;
+  height: 380px;
+  margin-left: 57px;
+}
+#habitatimage {
+  height: 335px;
+  width: 455px;
+}
+#populationimage {
+  height: 417px;
+  width: 550px;
+}
+.diet {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+}
+.dietpara {
+  background-color: #46505c;
+  border-radius: 9px;
+}
+.mating {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  padding: 50px 5px;
+  flex-direction: row-reverse;
+}
+.matingpara {
+  background-color: #09656f;
+  border-radius: 9px;
+}
+main {
+  margin-top: 8em;
+}
+h1 {
+  font-size: 4em;
+  color: #003955db;
+  text-align: center;
+  text-shadow: 2px 3px #649bbc;
+  margin-bottom: 0;
+}
+
+h1 + p {
+  color: #5c799c;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.box ul {
+  list-style-type: none;
+}
+p {
+  font-size: 20px;
+  padding: 2px 30px;
+  color: white;
+}
+.facts ul {
+  list-style-image: url(../images/beluga/beluga-icon.png);
+  padding: 0px 4em 19px;
+}
+.facts li {
+  color: #0d0f38;
+  font-size: 20px;
+  padding: 8px 10px;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #aec7e6;
+  margin-top: 0;
+  padding-top: 20px;
+  padding-left: 1em;
+}
+h3 {
+  font-weight: 600;
+  color: #f3fbffcc;
+  font-size: 22px;
+  padding-left: 30px;
+}
+.heading {
+  font-size: 17px;
+  font-weight: bold;
+  color: #212357cc;
+}
+.value {
+  color: #eb1f1fd9;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.facts h2 {
+  color: #0a2446;
+}
+
+/* ----- mobile view ------- */
+@media screen and (max-width: 760px) {
+  .section1 {
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+  .intro,
+  .distribution,
+  .habitat,
+  .population,
+  .diet,
+  .mating {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img {
+    padding-top: 3.5em;
+  }
+  .value {
+    font-size: x-large;
+    text-align: center;
+  }
+  .heading {
+    font-size: larger;
+    text-align: center;
+  }
+  #mainimage {
+    margin-left: 0px;
+  }
+}

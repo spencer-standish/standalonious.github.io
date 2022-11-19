@@ -1,0 +1,185 @@
+.home, main{
+    height: 100%;
+    /* margin-top: 10rem; */
+}
+
+.navclass, .home h1, h2 {
+    width: 100%;
+    text-align: center;
+    /* text-shadow: 2px 2px 2px gray; */
+}
+
+.home h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3.5em;
+}
+
+.home h2 {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 2em;
+    margin-bottom: 130px;
+}
+
+main h3 {
+    position: relative;
+    top: -80px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Satisfy', cursive;
+    font-style: italic;
+    text-shadow: 2px 2px 2px lightblue;
+}
+
+main {
+    display: grid;
+    grid-template: repeat(6, 1fr)/ repeat(2, 1fr);
+    grid-gap: 270px 20px;
+    padding: 2em 7em;
+}
+
+#image1 {
+    background-image: url('/Images/tfront.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image1:hover {
+    background-image: url('/Images/tback.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image2 {
+    background-image: url('/Images/totefront.PNG');
+    width: 600px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image2:hover {
+    background-image: url('/Images/toteback.PNG');
+    width: 600px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image3 {
+    background-image: url('/Images/cap.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image4 {
+    background-image: url('/Images/apron.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image5 {
+    background-image: url('/Images/babyblanketfront.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image5:hover {
+    background-image: url('/Images/babyblanketback.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image6 {
+    background-image: url('/Images/pillowfront.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image6:hover {
+    background-image: url('/Images/pillowback.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image7 {
+    background-image: url('/Images/grocerybagfront.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image7:hover {
+    background-image: url('/Images/grocerybagback.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image8 {
+    background-image: url('/Images/babybibfront.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image8:hover {
+    background-image: url('/Images/babybibback.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image9 {
+    background-image: url('/Images/keychainfront.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image9:hover {
+    background-image: url('/Images/keychainback.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+#image10 {
+    background-image: url('/Images/watch.PNG');
+    width: 650px;
+    height: 660px;
+    background-repeat: no-repeat;
+}
+
+.options {
+    margin-top: 670px;
+    text-align: center;
+}
+
+button {
+    width: 140px;
+    height: 40px;
+    background-color: rgb(41, 249, 41);
+    font-weight: bold;
+}
+/* .footerclass {
+    position: relative;
+  } */
+
+@media only screen and (max-width: 760px) {
+
+    main {
+        display: grid;
+        grid-template: repeat(11, 1fr)/ repeat(1, minmax(1px,100%));
+        /* grid-template: repeat(11, 1fr)/ repeat(1, minmax(1,1fr)); */
+    }
+
+    .home h1, h2 {
+        width: 950px;
+    }
+}

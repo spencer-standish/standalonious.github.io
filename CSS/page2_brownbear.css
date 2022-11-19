@@ -1,0 +1,173 @@
+/* ----- desktop view ------- */
+html {
+  width: fit-content;
+  margin-left: 10px;
+  margin-right: 13px;
+  font-family: cursive;
+  background-image: url(../images/brownbear/bear-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 60px;
+}
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.intropara {
+  flex-basis: 54em;
+}
+.intropara p {
+  color: black;
+}
+.box {
+  flex-basis: 20em;
+  padding: 20px 0;
+}
+.distribution {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 32px;
+}
+.distpara {
+  background-color: #bfa58d;
+  border-radius: 9px;
+  padding-top: 10px;
+}
+.habitat {
+  display: flex;
+  padding-top: 50px;
+  flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 26px;
+}
+.habitatpara {
+  background-color: #487985;
+  border-radius: 9px;
+}
+.population {
+  display: flex;
+  align-items: center;
+  padding: 50px 5px;
+  column-gap: 32px;
+}
+.poppara {
+  background-color: #6f5441;
+  border-radius: 9px;
+}
+img {
+  width: 540px;
+  height: 310px;
+  border-radius: 9px;
+}
+#mainimage {
+  width: 760px;
+  height: 400px;
+}
+.diet {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  flex-direction: row-reverse;
+}
+.dietpara {
+  background-color: #6e7748;
+  border-radius: 9px;
+}
+.mating {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+  padding: 50px 5px;
+}
+.matingpara {
+  background-color: #35652bdb;
+  border-radius: 9px;
+  padding-top: 12px;
+}
+main {
+  margin-top: 8em;
+}
+h1 {
+  font-size: 4em;
+  color: #3d3836;
+  text-align: center;
+  text-shadow: 2px 3px #af9898;
+}
+
+.box ul {
+  list-style-type: none;
+}
+p {
+  font-size: 20px;
+  padding: 2px 30px;
+  color: white;
+}
+.facts ul {
+  list-style-image: url(../images/brownbear/bear-icon.png);
+  padding: 0px 4em 19px;
+}
+.facts li {
+  color: #0d0f38;
+  font-size: 20px;
+  padding: 8px 10px;
+}
+h2 {
+  font-size: 2em;
+  font-weight: 700;
+  color: #0d0a09e6;
+  margin-top: 0;
+  padding-top: 10px;
+  padding-left: 1em;
+}
+h3 {
+  font-weight: 600;
+  color: #f5f5dcd1;
+  font-size: 22px;
+  padding-left: 30px;
+}
+.heading {
+  font-size: 17px;
+  font-weight: bold;
+  color: #212357cc;
+}
+.value {
+  color: #eb1f1fd9;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+/* ----- mobile view ------- */
+@media screen and (max-width: 760px) {
+  .section1 {
+    padding-top: 30px;
+    flex-wrap: wrap;
+  }
+  .intro,
+  .distribution,
+  .habitat,
+  .population,
+  .diet,
+  .mating {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img {
+    padding-top: 3.5em;
+  }
+  .value {
+    font-size: x-large;
+    text-align: center;
+  }
+  .heading {
+    font-size: larger;
+    text-align: center;
+  }
+}

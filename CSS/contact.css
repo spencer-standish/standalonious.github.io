@@ -1,0 +1,17 @@
+html{
+  width: fit-content;
+  margin-left: 10px;
+  margin-right: 13px;
+  font-family: cursive;
+  background-image: url(/images/contact/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+h1 {
+    font-size: 4em;
+    color: #003955db;
+    text-align: center;
+    text-shadow: 2px 3px #649bbc;
+    margin-bottom: 0;
+  }

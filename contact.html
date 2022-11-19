@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="images/Thumbnail.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Canada is one of the major desination of animals 
+      due to its wide spread area and climate. Every life is important 
+      in the world , so it is our sole responsibility to protect them 
+      from getting extincted and make sure their survival."
+    />
+    <meta
+      name="keywords"
+      content="Canada,save,animal,save Canada,protect 
+      animals,responsibility,NGO,Animal protection act,
+      Raindeer,whales,rabits,dogs,moose,beevers"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/contact.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div class="navclass"></div>
+      <main>
+    <h1>CONTACT US</h1>
+    <p>Thanks for dropping by! Whether you have a question, a comment or a suggestion to share, we look forward to hearing from you.</p>
+    <div class="contactform">
+    <form name="contactform" action="process.html" method="get">
+        <label for="name">Your First Name</label>
+        <input type="text" name="fname" id="fname" required/><br />
+        <label for="name">Your Last Name</label>
+        <input type="text" name="lname" id="lname" required/><br />
+        <label for="email">Your Email Address</Address></label>
+        <input type="email" name="email" id="email" required /><br />
+        What is your query about? <br />
+        <div id="floatnone">
+            <input type="radio" name="category" id="vol" value="volunteering" />
+            <label for="vol">Volunteering</label> <br />
+            <input type="radio" name="category" id="donation" value="donation" />
+            <label for="donation">Donations</label> <br />
+            <input type="radio" name="category" id="merch" value="merchandise" />
+            <label for="merch">Merchandise</label> <br />
+            <input type="radio" name="category" id="other" value="other" />
+            <label for="other">Others</label> <br />
+        </div>
+        Write your comments here! <br />
+        <textarea name="comments" id="comments" cols="50" rows="5"></textarea> <br>
+        <input type="button" name="btnSubmit" id="submit" value="Submit" />
+    </form></div>
+    <div class="rightside">
+        <div class="location">
+
+        </div>
+        <div class="phone">
+
+        </div>
+
+    </div>
+</main>
+<div class="footerclass"></div>
+</body>
+</html>
+<script type="text/javascript">
+  $(function () {
+    $(".navclass").load("navigation.html");
+  });
+  $(function () {
+    $(".footerclass").load("footer.html");
+  });
+</script>

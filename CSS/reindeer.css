@@ -1,0 +1,121 @@
+.headimg{
+    height:600px;
+    width: 100%;
+    /* margin-left: 50px; */
+    margin-top: 5rem;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.description{
+    font-size: 18px;
+    color: midnightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 50px;
+}
+
+.itemhead{
+    color: crimson;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.itemcontent{
+    color: midnightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.h3{
+    color: midnightblue;
+    margin-left: 50px;
+}
+
+.content-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.content-head{
+    text-align: center;
+    color: crimson;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content-text{
+    float: left;
+    font-size: 18px;
+    margin-right: 20px;
+    margin-left: 50px;
+    color:midnightblue;
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.list{
+    font-size: 18px;
+    color: midnightblue;
+    margin: 50px;
+}
+
+@media only screen and (max-width: 760px){
+    .headimg{
+        height:150px;
+        width:33%;
+    }
+ 
+    .container{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .itemhead{
+        color: crimson;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+    }
+
+    .itemcontent{
+        color: midnightblue;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 12px;
+    }
+
+    .content-image{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    
+    .content-head{
+        text-align: center;
+    }
+    
+    .content-text{
+        float: left;
+        margin-right: 20px;
+    }
+     
+    .wrapper{
+        display:flex;
+        flex-direction: row;
+       
+    }
+    
+    .list{
+        font-size: 9px;
+    }
+
+}

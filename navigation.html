@@ -13,13 +13,78 @@
     <img src="Images/LOGO.png" />
     <div class="menus">
     <a href="home.html">HOME</a>
-    <a href="services.html"
-      >SERVICES <i class="fa fa-angle-down" style="font-size: 24px"></i
-    ></a>
+    <div class="dropdown">
+      <div class="dropbtn">SERVICES
+        <i class="fa fa-angle-down"></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="Animal Merchandise.html">ANIMAL MERCHANDISE</a>
+        <a href="thirdpage.html">VOLUNTEER SERVICE</a>
+      </div>
+    </div>
     <a href="donation.html">DONATION</a>
-    <a href="support.html">FAUNA<i class="fa fa-angle-down"></i></a>
+    <div class="dropdown">
+      <div class="dropbtn">FAUNA
+        <i class="fa fa-angle-down"></i>
+      </div>
+      <div class="dropdown-content">
+        <a href="Arctic Fox.html">ARTIC FOX</a>
+        <a href="Arctic Hare.html">ARCTIC HARE</a>
+        <a href="Killer Whale.html">KILLER WHALE</a>
+        <a href="page1_belugawhale.html">BELUGA WHALE</a>
+        <a href="page2_brownbear.html">BROWN BEAR</a>
+        <a href="page3_moose.html">MOOSE</a>
+        <a href="alpaka.html">ALPAKA</a>
+        <a href="secondpage.html">REINDEER</a>
+        <a href="firstpage.html">CANADIAN LYNX</a>
+        <a href="bison.html">BISON</a>
+        <a href="beaver.html">BEAVER</a>
+        <a href="polarbear.html">POLAR BEAR</a>
+      </div>
+    </div>
     <a href="blog.html">ABOUT US</a>
-    <a href="about.html">CONTACT US</a>
+    <a href="contact.html">CONTACT US</a>
   </div>
   </nav>
+ 
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="Home.html">HOME</a>
+  <button class="dropdown-btn">SERVICES 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="Animal Merchandise.html">MERCHANDISE</a>
+    <a href="thirdpage.html">VOLUNTEER SERVICE</a>
+    <a href="#">Link 3</a>
+  </div>
+  <a href="donation.html">DONATION</a>
+  <button class="dropdown-btn">FAUNA 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="alpaka.html">ALPAKA</a>
+    <a href="Arctic Fox.html">ARCTIC FOX</a>
+    <a href="Arctic Hare.html">ARCTIC HARE</a>
+    <a href="page1_belugawhale.html">BELUGA WHALE</a>
+    <a href="page2_brownbear.html">BROWN BEAR</a>
+    <a href="page3_moose.html">MOOSE</a>
+    <a href="Killer Whale.html">KILLER WHALE</a>
+    <a href="secondpage.html">REINDEER</a>
+    <a href="firstpage.html">CANADIAN LYNX</a>
+    <a href="bison.html">BISON</a>
+    <a href="beaver.html">BEAVER</a>
+    <a href="polarbear.html">POLAR BEAR</a>
+  </div>
+  <a href="#">ABOUT US</a>
+  <a href="contact.html">CONTACT US</a>
+</div>
+
+<div id="main2">
+ 
+  <span class="navoption" onclick="openNav()">&#9776;</span>
+</div>
+ 
+<!-- --------mobile view------ -->
+  <script src="script/nav.js"></script>
 </section>

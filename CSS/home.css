@@ -20,14 +20,14 @@ img {
 }
 .home {
   z-index: 0;
-  height: 190rem;
+  /* height: 190rem; */
 }
 .bannertext{
   font-size:1.2rem; width: 35%;
 }
-.footerclass {
+/* .footerclass {
   position: relative;
-}
+} */
 .main_head {
   width: 35%;
   line-height: 50px;
@@ -39,7 +39,7 @@ img {
 }
 .banner {
   padding: 10em 5em;
-  margin-top: 0em;
+  margin-top: -5em;
   line-height: 28px;
 }
 .paragraph {
@@ -50,7 +50,7 @@ img {
   float: left;
   width: 20%;
   color: rgb(28, 159, 115);
-  height: 190rem;
+  height: 170rem;
   background: rgba(157, 196, 175, 0.652);
   padding: 10px;
   padding-top: 20px;
@@ -130,7 +130,7 @@ article {
 .hotspot:hover + * {
   opacity: 1;
 }
-.sidenav{
+.sidenav2{
   list-style-type: none;
   position: sticky;
   top: 150px
@@ -148,14 +148,16 @@ article {
     margin: 0 auto;
     width: 100%;
   }
-
+.homebanner{
+  margin-top: -83px;
+}
   * {
     box-sizing: border-box;
   }
-  .home {
+  /* .home {
     z-index: 0;
     height: 300rem;
-  }
+  } */
   
   .footerclass {
     position: relative;

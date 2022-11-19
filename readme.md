@@ -1,21 +1,19 @@
 ## Assignment Name: : Project Task List 8
 
 
-## Name: George Devid John Thekkineth
+## Name:
 
-## Student Number: N01547325
+## Student Number: 
 
 ## Tasks
 
-- [x] Responsive Layout with  HTML and CSS for your third project feature
+- [x] 
 
 
 ## Leaning curve and challenges
 
 - 
 
-
 ## Resources
 
-- https://www.w3schools.com/
-- https://www.worldwildlife.org/
+- 
