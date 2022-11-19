@@ -1,0 +1,52 @@
+
+
+/* All these class can be overwritten by your choice */
+
+
+
+.primary_head{
+    font-size: 2em;
+    font-family: century-gothic, sans-serif;
+    font-weight: 600;
+    color: #0D0F38;
+    margin-bottom: 0;
+}
+
+.secoundary_head{
+    font-size: 1.8em;
+    font-family: century-gothic, sans-serif;
+    font-weight: 100;
+    color: #0D0F38;
+    margin-top: 0;
+    padding-top: 0;
+}
+.theriary_head{
+    font-family: century-gothic, sans-serif;
+    font-weight: 600;
+    color: #0D0F38;
+    font-size: 1em;
+}
+.paragraph{
+    font-family: century-gothic, sans-serif;
+    color: #0D0F38;
+    font-size: .8em;
+    font-weight: 500;
+}
+.primary_button{
+    color: white;
+    border: none;
+    background: #d95e5e;
+    padding: 1.4em 2.4em;
+    border-radius: 30em;
+    font-size: 0.8em;
+    box-shadow: 0px 6px 23px #0404046e;
+}
+.secoundary_botton{
+    color: white;
+    border: none;
+    background: #74ad54;
+    padding: 1.4em 2.4em;
+    border-radius: 30em;
+    font-size: 0.8em;
+    box-shadow: 0px 6px 23px #0404046e;
+}

@@ -1,0 +1,70 @@
+.theriary_head{
+    color: white;
+    margin-left: 2rem;
+}
+footer .footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    padding: .6em 4em 3.2em;
+    }
+
+ul{
+    color: white;
+    line-height: 2em;
+}
+li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.66);
+    font-family: century-gothic, sans-serif;
+    font-weight: 600;
+    font-size: .8em;
+}
+footer section{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a:hover,a:focus{
+    color: rgb(85, 161, 136);
+}
+a:visited{
+    color: rgb(67, 156, 126);
+}
+.fa-facebook::before {
+    color: white;
+    font-size: 25px;
+    padding-right: 21px;
+    vertical-align: sub;
+  }
+  .fa-youtube::before {
+    color: white;
+    font-size: 25px;
+    padding-right: 15px;
+    vertical-align: sub;
+
+  }
+  .fa-instagram::before {
+    color: white;
+    font-size: 25px;
+    padding-right: 15px;
+    vertical-align: sub;
+  }
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.66);
+    font-family: century-gothic, sans-serif;
+    font-weight: 600;
+    font-size: .8em;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 760px){
+    
+}
