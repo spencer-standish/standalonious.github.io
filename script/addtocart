@@ -11,6 +11,7 @@ window.onload = function () {
   document.getElementById('addtocart10').onclick = cart10;
 };
 
+//T-Shirt
 function cart1() {
     let quantity = document.querySelector('#image1 .options .quantity').value;
     let size = document.querySelector('#image1 .options .size').value;
@@ -18,6 +19,7 @@ function cart1() {
     alert(quantity + ' ' + size + ' ' + color + ' T-Shirt(s) selected');
 }
 
+//Tote Bag
 function cart2() {
     let quantity = document.querySelector('#image2 .options .quantity').value;
     let size = document.querySelector('#image2 .options .size').value;
@@ -25,6 +27,7 @@ function cart2() {
     alert(quantity + ' ' + size + ' ' + color + ' Tote Bag(s) selected');
 }
 
+//Cap
 function cart3() {
     let quantity = document.querySelector('#image3 .options .quantity').value;
     let size = document.querySelector('#image3 .options .size').value;
@@ -32,6 +35,7 @@ function cart3() {
     alert(quantity + ' ' + size + ' ' + color + ' Cap(s) selected');
 }
 
+//Apron
 function cart4() {
     let quantity = document.querySelector('#image4 .options .quantity').value;
     let size = document.querySelector('#image4 .options .size').value;
@@ -39,12 +43,14 @@ function cart4() {
     alert(quantity + ' ' + size + ' ' + color + ' Apron(s) selected');
 }
 
+//Baby Blanket
 function cart5() {
     let quantity = document.querySelector('#image5 .options .quantity').value;
     let color = document.querySelector('#image5 .options .color').value;
     alert(quantity + ' ' + color + ' Baby Blanket(s) selected');
 }
 
+//Pillow
 function cart6() {
     let quantity = document.querySelector('#image6 .options .quantity').value;
     let size = document.querySelector('#image6 .options .size').value;
@@ -52,6 +58,7 @@ function cart6() {
     alert(quantity + ' ' + size + ' ' + color + ' Pillow(s) selected');
 }
 
+//Grocery Bag
 function cart7() {
     let quantity = document.querySelector('#image7 .options .quantity').value;
     let size = document.querySelector('#image7 .options .size').value;
@@ -59,18 +66,21 @@ function cart7() {
     alert(quantity + ' ' + size + ' ' + color + ' Grocery Bag(s) selected');
 }
 
+//Baby Bib
 function cart8() {
     let quantity = document.querySelector('#image8 .options .quantity').value;
     let color = document.querySelector('#image8 .options .color').value;
     alert(quantity + ' ' + color + ' Baby Bib(s) selected');
 }
 
+//Keychain
 function cart9() {
     let quantity = document.querySelector('#image9 .options .quantity').value;
     let color = document.querySelector('#image9 .options .color').value;
     alert(quantity + ' ' + color + ' Keychain(s) selected');
 }
 
+//Watch
 function cart10() {
     let quantity = document.querySelector('#image10 .options .quantity').value;
     let color = document.querySelector('#image10 .options .color').value;
