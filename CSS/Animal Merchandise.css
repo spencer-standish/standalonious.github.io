@@ -91,7 +91,7 @@ main {
     width: 650px;
     height: 660px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #image5:hover {
@@ -99,7 +99,7 @@ main {
     width: 650px;
     height: 660px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #image6 {
@@ -123,7 +123,7 @@ main {
     width: 650px;
     height: 660px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #image7:hover {
@@ -131,7 +131,7 @@ main {
     width: 650px;
     height: 660px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #image8 {
@@ -139,7 +139,7 @@ main {
     width: 650px;
     height: 660px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #image8:hover {
@@ -147,23 +147,23 @@ main {
     width: 650px;
     height: 660px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #image9 {
     background-image: url('/Images/keychainfront.PNG');
-    width: 700px;
+    width: 650px;
     height: 660px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #image9:hover {
     background-image: url('/Images/keychainback.PNG');
-    width: 700px;
+    width: 650px;
     height: 660px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #image10 {
