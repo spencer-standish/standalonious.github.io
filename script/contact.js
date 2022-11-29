@@ -7,12 +7,12 @@ const processEntries = () => {
   let emailpattern =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-  // get form controls to check for validity
+  // getting form controls to check for validity
   const fname = s("#fname");
   const lname = s("#lname");
   const email = s("#email");
 
-  // check user entries for validity
+  // checking user entries for validity
   let isValid = true;
   if (fname.value == "") {
     fname.nextElementSibling.textContent = "This field is required.";
@@ -53,6 +53,7 @@ const processEntries = () => {
   }
 };
 
+//resetting the form
 const resetForm = () => {
   s("form").reset();
   s("#fname").nextElementSibling.textContent = "*";

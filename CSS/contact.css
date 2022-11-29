@@ -61,6 +61,7 @@ span {
 }
 #column{
   display: flex;
+  justify-content: space-evenly;
 }
 img{
   height: 100px;
