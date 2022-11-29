@@ -132,6 +132,7 @@
             </section>
         </div>
     </div>
+    <button id="totopbutton" onclick="toTop()">Back to Top</button>
     <div class="footerclass"></div>
   </body>
 </html>
@@ -142,5 +143,7 @@
      $(function(){
         $(".footerclass").load("footer.html");
      } );
+
+     const toTop = () => window.scrollTo({top: 0, behavior: 'smooth'});
         
 </script>
