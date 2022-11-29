@@ -1,7 +1,7 @@
 html {
   font-family: cursive;
 }
-body{
+body {
   margin: 0 auto;
 }
 h1 {
@@ -32,7 +32,7 @@ span {
   flex-direction: row;
   align-items: center;
 }
-#submit {
+#submit_form {
   background-color: #0e4764;
   color: white;
   width: 126px;
@@ -46,12 +46,12 @@ span {
   height: 34px;
   font-weight: 600;
 }
-#box{
+#box {
   background-color: #ddd6d6;
   padding: 20px 55px;
   margin-left: 10px;
 }
-#side{
+#side {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,15 +59,15 @@ span {
   background-color: #0e47645e;
   padding-top: 30px;
 }
-#column{
+#column {
   display: flex;
   justify-content: space-evenly;
 }
-img{
+img {
   height: 100px;
   width: 100px;
   margin-top: 25px;
 }
-#column div{
+#column div {
   margin-bottom: 1em;
 }

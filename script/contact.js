@@ -1,7 +1,6 @@
 const s = (selector) => document.querySelector(selector);
 
 const processEntries = () => {
-
   //regular expression for validation of name and email address
   let namepattern = /^[a-zA-z]{1,30}$/;
   let emailpattern =
@@ -11,6 +10,7 @@ const processEntries = () => {
   const fname = s("#fname");
   const lname = s("#lname");
   const email = s("#email");
+
 
   // checking user entries for validity
   let isValid = true;
@@ -49,7 +49,7 @@ const processEntries = () => {
 
   // submit the form if all fields are valid
   if (isValid == true) {
-    alert('Thankyou. We have received your message. We will get back to you shortly.');
+    s("form").submit();
   }
 };
 
@@ -64,7 +64,7 @@ const resetForm = () => {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  s("#submit").addEventListener("click", processEntries);
+  s("#submit_form").addEventListener("click", processEntries);
   s("#reset_form").addEventListener("click", resetForm);
   s("#fname").focus();
 });

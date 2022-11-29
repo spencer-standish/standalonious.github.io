@@ -22,18 +22,18 @@
     <link rel="stylesheet" href="CSS/contact.css" />
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
     <!-- header -->
     <div class="navclass"></div>
 <main>
+  <!-- Main content -->
     <h1>CONTACT US</h1>
     <div id="column">
     <div id="box">
     <p>Thanks for dropping by! Whether you have a question, a comment or a suggestion to share, <br> we look forward to hearing from you.</p>
     <div class="contactform">
-    <form action="process.html" method="get">
+    <form action="confirmation.html" method="get">
       <div>
         <label for="name">Your First Name</label>
         <input type="text" name="fname" id="fname"/>
@@ -64,7 +64,7 @@
         <textarea name="comments" id="comments" cols="50" rows="5"></textarea><br />
         </div>
         <div>
-          <input type="button" name="btnSubmit" id="submit" value="Submit" />
+          <input type="button" name="btnSubmit" id="submit_form" value="Submit" />
           <input type="button" name= "btnReset" id="reset_form" value="Reset" />
         </div>
     </form>
@@ -76,18 +76,20 @@
   <img src="/Images/contact/address.png" alt="address icon">
   <p>CanSave <br>1468 Abbs Avenue <br>Toronto, ON</p></div></div>
 </main>
- <!-- content ends -->
+ <!-- Main content ends -->
     <!-- footer -->
     <div class="footerclass"></div>
     <!-- Java Script -->
     <script src="script/contact.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $(".navclass").load("navigation.html");
+      });
+      $(function () {
+        $(".footerclass").load("footer.html");
+      });
+    </script>
   </body>
 </html>
-<script type="text/javascript">
-  $(function () {
-    $(".navclass").load("navigation.html");
-  });
-  $(function () {
-    $(".footerclass").load("footer.html");
-  });
-</script>
+
