@@ -1,5 +1,5 @@
 html {
-  font-family: cursive;
+  font-family: Verdana, sans-serif;
 }
 body {
   margin: 0 auto;
@@ -63,7 +63,7 @@ span {
   display: flex;
   justify-content: space-evenly;
 }
-img {
+ #side img {
   height: 100px;
   width: 100px;
   margin-top: 25px;
