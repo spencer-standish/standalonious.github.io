@@ -3,7 +3,6 @@ html {
   margin-left: 10px;
   margin-right: 13px;
   font-family: cursive;
-  background-image: url(/images/contact/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -14,6 +13,7 @@ h1 {
   text-align: center;
   text-shadow: 2px 3px #649bbc;
   margin-top: 2em;
+  margin-bottom: 10px;
 }
 div {
   margin-bottom: 1em;
@@ -33,12 +33,6 @@ select {
 span {
   color: red;
 }
-img {
-  height: 100px;
-  width: 100px;
-  padding-top: 5em;
-  margin-left: 11px;
-}
 #heading {
   display: flex;
   flex-direction: row;
@@ -57,4 +51,25 @@ img {
   width: 126px;
   height: 34px;
   font-weight: 600;
+}
+#box{
+  background-color: #ddd6d6;
+  padding: 20px 55px;
+  margin-left: 10px;
+}
+#side{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 19em;
+  background-color: #0e47645e;
+  padding-top: 30px;
+}
+#column{
+  display: flex;
+}
+img{
+  height: 100px;
+  width: 100px;
+  margin-top: 25px;
 }

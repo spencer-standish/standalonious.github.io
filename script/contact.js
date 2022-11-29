@@ -1,10 +1,12 @@
 const $ = (selector) => document.querySelector(selector);
 
-let namepattern = /^[a-zA-z]$/;
-let emailpattern =
-  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
 const processEntries = () => {
+
+  //regular expression for validation of name and email address
+  let namepattern = /^[a-zA-z]{1,30}$/;
+  let emailpattern =
+    /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
   // get form controls to check for validity
   const fname = $("#fname");
   const lname = $("#lname");
