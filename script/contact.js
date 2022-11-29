@@ -1,4 +1,4 @@
-const $ = (selector) => document.querySelector(selector);
+const s = (selector) => document.querySelector(selector);
 
 const processEntries = () => {
 
@@ -8,9 +8,9 @@ const processEntries = () => {
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
   // get form controls to check for validity
-  const fname = $("#fname");
-  const lname = $("#lname");
-  const email = $("#email");
+  const fname = s("#fname");
+  const lname = s("#lname");
+  const email = s("#email");
 
   // check user entries for validity
   let isValid = true;
@@ -49,21 +49,21 @@ const processEntries = () => {
 
   // submit the form if all fields are valid
   if (isValid == true) {
-    $("form").submit();
+    alert('Thankyou. We have received your message. We will get back to you shortly.');
   }
 };
 
 const resetForm = () => {
-  $("form").reset();
-  $("#fname").nextElementSibling.textContent = "*";
-  $("#lname").nextElementSibling.textContent = "*";
-  $("#email").nextElementSibling.textContent = "*";
-  $("#comments").nextElementSibling.textContent = "*";
-  $("#fname").focus();
+  s("form").reset();
+  s("#fname").nextElementSibling.textContent = "*";
+  s("#lname").nextElementSibling.textContent = "*";
+  s("#email").nextElementSibling.textContent = "*";
+  s("#comments").nextElementSibling.textContent = "*";
+  s("#fname").focus();
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-  $("#submit").addEventListener("click", processEntries);
-  $("#reset_form").addEventListener("click", resetForm);
-  $("#fname").focus();
+  s("#submit").addEventListener("click", processEntries);
+  s("#reset_form").addEventListener("click", resetForm);
+  s("#fname").focus();
 });

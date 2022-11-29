@@ -1,11 +1,8 @@
 html {
-  width: fit-content;
-  margin-left: 10px;
-  margin-right: 13px;
   font-family: cursive;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+}
+body{
+  margin: 0 auto;
 }
 h1 {
   font-size: 4em;
@@ -14,9 +11,6 @@ h1 {
   text-shadow: 2px 3px #649bbc;
   margin-top: 2em;
   margin-bottom: 10px;
-}
-div {
-  margin-bottom: 1em;
 }
 label {
   display: inline-block;
@@ -72,4 +66,7 @@ img{
   height: 100px;
   width: 100px;
   margin-top: 25px;
+}
+#column div{
+  margin-bottom: 1em;
 }
