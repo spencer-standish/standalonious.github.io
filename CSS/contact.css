@@ -1,4 +1,4 @@
-html{
+html {
   width: fit-content;
   margin-left: 10px;
   margin-right: 13px;
@@ -9,9 +9,52 @@ html{
   background-attachment: fixed;
 }
 h1 {
-    font-size: 4em;
-    color: #003955db;
-    text-align: center;
-    text-shadow: 2px 3px #649bbc;
-    margin-bottom: 0;
-  }
+  font-size: 4em;
+  color: #003955db;
+  text-align: center;
+  text-shadow: 2px 3px #649bbc;
+  margin-top: 2em;
+}
+div {
+  margin-bottom: 1em;
+}
+label {
+  display: inline-block;
+  width: 10em;
+  text-align: left;
+}
+input,
+select {
+  margin-left: 1em;
+}
+select {
+  width: 13em;
+}
+span {
+  color: red;
+}
+img {
+  height: 100px;
+  width: 100px;
+  padding-top: 5em;
+  margin-left: 11px;
+}
+#heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#submit {
+  background-color: #262137c9;
+  color: white;
+  width: 126px;
+  height: 34px;
+  font-weight: 600;
+}
+#reset_form {
+  background-color: #262137c9;
+  color: white;
+  width: 126px;
+  height: 34px;
+  font-weight: 600;
+}

@@ -28,43 +28,52 @@
     <!-- header -->
     <div class="navclass"></div>
       <main>
+        <div id="heading">
     <h1>CONTACT US</h1>
+    <img src="images/contact/heading.jpg" alt=""></div>
     <p>Thanks for dropping by! Whether you have a question, a comment or a suggestion to share, we look forward to hearing from you.</p>
     <div class="contactform">
-    <form name="contactform" action="process.html" method="get">
+    <form action="confirmation.html" method="get">
+      <div>
         <label for="name">Your First Name</label>
-        <input type="text" name="fname" id="fname" required/><br />
-        <label for="name">Your Last Name</label>
-        <input type="text" name="lname" id="lname" required/><br />
-        <label for="email">Your Email Address</Address></label>
-        <input type="email" name="email" id="email" required /><br />
-        What is your query about? <br />
-        <div id="floatnone">
-            <input type="radio" name="category" id="vol" value="volunteering" />
-            <label for="vol">Volunteering</label> <br />
-            <input type="radio" name="category" id="donation" value="donation" />
-            <label for="donation">Donations</label> <br />
-            <input type="radio" name="category" id="merch" value="merchandise" />
-            <label for="merch">Merchandise</label> <br />
-            <input type="radio" name="category" id="other" value="other" />
-            <label for="other">Others</label> <br />
+        <input type="text" name="fname" id="fname"/>
+        <span>*</span><br />
+      </div>
+        <div>
+          <label for="name">Your Last Name</label>
+        <input type="text" name="lname" id="lname" />
+        <span>*</span><br />
         </div>
-        Write your comments here! <br />
-        <textarea name="comments" id="comments" cols="50" rows="5"></textarea> <br>
-        <input type="button" name="btnSubmit" id="submit" value="Submit" />
-    </form></div>
-    <div class="rightside">
-        <div class="location">
-
+        <div>
+          <label for="email">Your Email Address</Address></label>
+          <input type="email" name="email" id="email" />
+          <span>*</span><br />
         </div>
-        <div class="phone">
-
+        <div id="query">
+  What is your query about? <span>*</span> <br /> 
+      <input type="radio" name="category" id="vol" value="volunteering" />
+      <label for="vol">Volunteering</label> 
+      <input type="radio" name="category" id="donation" value="donation" />
+      <label for="donation">Donations</label> 
+      <input type="radio" name="category" id="merch" value="merchandise" />
+      <label for="merch">Merchandise</label> 
+      <input type="radio" name="category" id="other" value="other" checked/>
+      <label for="other">Others</label> <br /></div>
+      <div>
+  Write your comments here! <span>*</span><br /> 
+        <textarea name="comments" id="comments" cols="50" rows="5"></textarea><br />
         </div>
-
-    </div>
+        <div>
+          <input type="button" name="btnSubmit" id="submit" value="Submit" />
+          <input type="button" name= "btnReset" id="reset_form" value="Reset" />
+        </div>
+    </form>
 </main>
-<div class="footerclass"></div>
-</body>
+ <!-- content ends -->
+    <!-- footer -->
+    <div class="footerclass"></div>
+    <script src="script/contact.js"></script>
+  </body>
 </html>
 <script type="text/javascript">
   $(function () {
