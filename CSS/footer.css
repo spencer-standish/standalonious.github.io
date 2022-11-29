@@ -73,6 +73,9 @@ a {
 .opencalss{
   visibility: hidden;
 }
+.copyright{
+  color: rgba(255, 255, 255, 0.649); text-align: center; margin-top: -3rem;
+}
 }
 /* -----mobile view ----- */
 @media only screen and (max-width: 760px) {
@@ -146,6 +149,9 @@ a {
     font-weight: 600;
     font-size: 0.8em;
     line-height: 20px;
+  }
+  .copyright{
+    color: rgba(255, 255, 255, 0.649); text-align: center; margin-top: -40px;
   }
   
   }
