@@ -7,6 +7,42 @@
     margin-top: 5rem;
     display: flex;
   }
+  .confirm {
+    display: none;
+  }
+  .confirmTitle {
+    margin: 0 auto;
+  }
+  .confirm .thankyou {
+    font-family: sans-serif;
+    color: antiquewhite;
+  }
+  .confirm img {
+    height: 20rem;
+    width: 15rem;
+  }
+  .formcalss {
+    margin-top: -10px;
+  }
+  form span {
+    color: rgb(213, 120, 120);
+    padding-right: 5px;
+    font-family: century-gothic, sans-serif;
+  }
+
+  form label,
+  input,
+  select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    width: 20rem;
+  }
+
+  iframe {
+    height: 20rem;
+    width: 36rem;
+  }
   .banner img {
     width: 60%;
   }
@@ -64,12 +100,16 @@
     border-top: groove;
   }
   .donateimage {
-    width: 50%;
-    height: 30rem;
+    width: 65%;
+    height: 36rem;
   }
   .donatetext {
     width: 50%;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 40px;
+
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -118,6 +158,31 @@
     display: flex;
     flex-direction: column;
   }
+  form span {
+    color: rgb(213, 120, 120);
+    padding-right: 5px;
+    font-family: century-gothic, sans-serif;
+  }
+  .confirm h2 {
+    font-family: sans-serif;
+    color: antiquewhite;
+  }
+
+  form label,
+  input,
+  select {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    width: 20rem;
+  }
+  form {
+    margin: 0 auto;
+  }
+  .confirm {
+    margin: 0 auto;
+    display: none;
+  }
   .banner h1 {
     margin: 0 auto;
     display: grid;
@@ -129,6 +194,10 @@
   .common_conetent .secound_text {
     text-align: center;
     width: 100%;
+  }
+  .youtube {
+    display: flex;
+    justify-content: space-around;
   }
   .common_conetent .primary_head {
     text-align: center;
@@ -180,9 +249,10 @@
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-content: center;
     background-color: rgb(32, 83, 66);
-    justify-content: space-around;
+    /* justify-content: space-around; */
   }
   .donatetext .secound_text {
     text-align: center;
@@ -203,6 +273,10 @@
   }
   .goals .primary_head {
     text-align: center;
+  }
+  .confirm img {
+    height: 20rem;
+    width: 15rem;
   }
 
   .griditem {

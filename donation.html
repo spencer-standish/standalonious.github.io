@@ -60,6 +60,12 @@
             and policies toward sustainability, tackle the threats driving the
             climate crisis, and protect and restore wildlife and their habitats.
           </p>
+          <div class="youtube">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QFzfFpjRwD8?start=55" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+             allowfullscreen
+             style="border-radius: 20px;box-shadow: 5px 5px 30px rgb(52, 51, 51);"></iframe>
+          </div>
         </div>
         <div class="animalsort">
           <ul class="counts">
@@ -115,18 +121,53 @@
         "
       ></div>
       <div class="donatetext">
-        <h2 class="primary_head" style="color: #ffffff">DONATE TO SAVE</h2>
-        <p class="paragraph secound_text" style="color: #ffffff">
+        <h2 id="donatetitle"class="primary_head" style="color: #ffffff">DONATE TO SAVE</h2>
+      
+        <p id = "donationtext"class="paragraph secound_text" style="color: #ffffff">
           You help animals every day! You make it possible for volunteers and
           team members to carry out critical animal wellness programs and
           services.Your donations demonstrate your trust in our volunteers and
-          team members to carry out this critical work. And, in return, we are
-          committed to transparency regarding how your donations are put into
-          action.
+          team members to carry out this critical work.</p>
           <br />
           <br />
-          <button class="primary_button" style="clear: left">Donate Now</button>
-        </p>
+
+            <div id="formcalss" class="formcalss" >
+          <form>
+            <div>
+              <input type="email" name="name" id="name" placeholder="Enter your name" required /><span> *</span><br />
+            </div>
+            <div>
+              <input type="email" name="email" id="email" required placeholder="Enter your email" /><span> *</span><br />
+            </div>
+            
+           <div>
+            <input type="account" name="account" id="account" maxlength="8" placeholder="Enter 8 digit account number" required /><span> *</span><br />
+           </div>
+          <div><input type="cvv" name="cvv" id="cvv" maxlength="3" placeholder="Enter 3 digit cvv number" required /><span> *</span><br /></div>
+<div>
+            <select name="bank" id="bank" aria-placeholder="Choose the bank" id="bank">
+              <option value="HTML">CIBC</option>
+              <option value="CSS">SCOTTIA</option>
+              <option value="JavaScript">RBC</option>
+              <option value="Java">HDFC</option>
+              <option value="PHP">ICIC</option>
+      
+            </select></br>
+          </div>
+            <button type="button" id="submit" class="primary_button" style="clear: left">Donate Now</button>
+            <button type="button" id="reset" class="primary_button" style="clear: left;background-color: grey;margin-left: 20px;">Reset</button>
+          </form>
+        </div>
+
+          <div id="confirm" class="confirm"></br>
+            <h2 class="primary_head" style="color: #ffffff">DONATE TO SAVE</h2>
+            <div class="confirmTitle" >
+            <h2 class="thankyou">Thank you for your  donation</h2>
+           <img src="Images/XOsX.gif"/>
+           <button type="button" id="back" class="primary_button" style="clear: left;background-color: grey;">Back</button>
+
+          </div>
+          </div>
       </div>
     </section>
     <section class="goals">
@@ -190,6 +231,7 @@
 </html>
 
 <!-- java script to import footer and navigation -->
+<script src="script/donation.js"></script>
 <script type="text/javascript">
   $(function () {
     $(".footerclass").load("footer.html");
