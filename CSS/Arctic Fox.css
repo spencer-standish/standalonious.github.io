@@ -30,6 +30,14 @@ img{
     justify-content: center;
 }
 
+#class00, .class0 img {
+    height: 400px;
+}
+
+#slides img {
+    display: none;
+}
+
 /* Center, one-line paras */
 .class1 {
     text-align: center;
@@ -147,17 +155,12 @@ h2{
     max-width: 1400px;
 } */
 
-/* .footerclass {
-    position: relative;
-    margin-top: 70rem;
-  } */
-
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 950px) {
     body{
         font-size: 0.6em;
     }
 
-    #class0{
+    #class00, .class0 img{
         height: 50%;
         width: 50%;
     }
