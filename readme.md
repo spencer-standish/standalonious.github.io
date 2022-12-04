@@ -1,4 +1,4 @@
-## Assignment Name: : Project Task List 8
+## Assignment Name: : Project Phase 2
 
 
 ## Name: George, Lidia, Krutika, Spencer, Keziah
