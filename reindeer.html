@@ -31,7 +31,7 @@
     </div>
     
     <div>
-        <div class="container">
+        <div id="container" class="container">
             <div>
                 <h4 class="itemhead">Height</h4>
                 <h4 class="itemcontent">80-150 CM</h4>
@@ -62,7 +62,7 @@
     <div>
         <div>
             <div>    
-                <img src="Images/reindeer3.jpg" class="content-image" alt="Reindeer">
+                <img src="Images/reindeer3.jpg" id="content-image-id1" class="content-image" alt="Reindeer">
             </div>
             <div>
                 <h2 class="content-head">Habits and Lifestyle</h2>
@@ -82,7 +82,7 @@
 
         <div>
             <div>
-                <img src="Images/reindeer4.jpg" class="content-image" alt="Reindeer">
+                <img src="Images/reindeer4.jpg" id="content-image-id2" class="content-image" alt="Reindeer">
             </div>
             <div>
                 <h2 class="content-head">Domestication</h2>
@@ -144,7 +144,7 @@
     </div>
 
     <div>
-        <img src="Images/reindeer7.jpg" class="content-image">
+        <img src="Images/reindeer7.jpg" id="content-image-id3" class="content-image">
     </div>
     
     <div>
@@ -186,6 +186,70 @@
             </li>
         </ul>
     </div>
+    <script>
+		//  container 
+        document.getElementById(
+            "container").addEventListener(
+            "mouseover", function(){
+				over("container")
+			});
+        
+        document.getElementById(
+            "container").addEventListener(
+            "mouseout", function(){
+				out("container")
+			});
+		
+		//  Image1 
+		document.getElementById(
+            "content-image-id1").addEventListener(
+            "mouseover", function(){
+				over("content-image-id1")
+			});
+        
+        document.getElementById(
+            "content-image-id1").addEventListener(
+            "mouseout", function(){
+				out("content-image-id1")
+			});
+			
+		//  Image2 
+		document.getElementById(
+            "content-image-id2").addEventListener(
+            "mouseover", function(){
+				over("content-image-id2")
+			});
+        
+        document.getElementById(
+            "content-image-id2").addEventListener(
+            "mouseout", function(){
+				out("content-image-id2")
+			});
 
+		//  Image3 
+		document.getElementById(
+            "content-image-id3").addEventListener(
+            "mouseover", function(){
+				over("content-image-id3");
+			});
+        
+        document.getElementById(
+            "content-image-id3").addEventListener(
+            "mouseout", function(){
+				out("content-image-id3")
+			});
+		
+		
+		function over(a) {
+            document.getElementById(
+                a).classList.add("zoom");
+        }
+
+        function out(b) {
+             document.getElementById(
+                b).classList.remove("zoom");
+        }
+		
+    </script>
 </body>
 </html>

@@ -10,6 +10,7 @@
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 50px;
 }
 
 .description{
@@ -67,6 +68,13 @@
     font-size: 18px;
     color: midnightblue;
     margin: 50px;
+}
+
+.zoom{
+	transition: transform .2s; /* Animation */
+}
+.zoom:hover{
+	transform: scale(1.1);
 }
 
 @media only screen and (max-width: 760px){
