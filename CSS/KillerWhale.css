@@ -53,6 +53,7 @@ h1{
     font-size: 200%;
     color: black;
     font-family: 'Yeseva One', cursive;
+    margin-top: 2em;
 }
 
 h2{
@@ -124,6 +125,7 @@ h2{
     width: 94%;
     display: flex;
     margin-left: 75px;
+    margin-bottom: 10em;
 }
 
 /* Right Img */
