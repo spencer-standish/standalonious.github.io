@@ -42,35 +42,36 @@
           <h2 class="social_head" style="font-size: 30px">
             Happy Birthday to Tapir
           </h2>
-          <p class="paragraph">
+          <p class="paragraph marginbottom">
             20 year South American Tapir from Albama forest reserve gave birth
             to a male tapir on this sunday 2:30pm. The child and the mother were
             then transported to a safer place in the reserve.
           </p>
+          <a onclick="openMore(firstpara,more1)" id="more1" style="color: rgba(29, 90, 28, 0.841)
+          ; font-size:large;">more..</a>
+          <div id="firstpara">
+          <p class="paragraph" style="margin-top:-1rem ; margin-bottom: -10px;
+        ">
+            The parent Tapir were suffering from a rare desease called thransofra that cause a bulging 
+          on the leg of the tapir. After a long treartment the illnes were removed. </br>
+          </p>
+          <a onclick="less(more1,firstpara)" style="color: rgba(29, 90, 28, 0.841)
+          ; font-size:large">less</a>
+          </div>
           <div class="social_media_icons">
-            <a href="#"
+            <a onclick="like(zeroHeart)"
               ><i
                 class="fa fa-heart"
+                id="zeroHeart"
                 style="
-                  color: rgb(216, 103, 103);
                   font-size: 22px;
                   padding-right: 30px;
                 "
               ></i
             ></a>
-            <a href="#"
+            <a onclick="alert('Are you sure do you want to share this ?')"
               ><i
                 class="fa fa-share-square"
-                style="
-                  color: rgb(191, 191, 191);
-                  font-size: 22px;
-                  padding-right: 30px;
-                "
-              ></i
-            ></a>
-            <a href="#"
-              ><i
-                class="fa fa-comment"
                 style="
                   color: rgb(191, 191, 191);
                   font-size: 22px;
@@ -96,35 +97,37 @@
           <h2 class="social_head" style="font-size: 30px">
             Humders attack on Opossums
           </h2>
-          <p class="paragraph">
+          <p class="paragraph marginbottom">
             Couple of Opossums got kiiled by the hunters ths saturday 20th Sep
             2022. In that case governemt of canada have issued a band on hunding
             in the reserved areas.
           </p>
+          <a onclick="openMore(secoundpara,more2)" id="more2" style="color: rgba(29, 90, 28, 0.841)
+          ; font-size:large;">more..</a>
+          <div id="secoundpara">
+          <p class="paragraph" style="margin-top:-1rem ; margin-bottom: -10px;
+        ">
+          The Opossums where considerd as one of the endangered sepcies in 2002 report of 
+          WWF, and again later on the 2009 , the count got increased to normal level  </br>
+          </p>
+          <a onclick="less(more2,secoundpara)" style="color: rgba(29, 90, 28, 0.841)
+          ; font-size:large">less</a>
+          </div>
           <div class="social_media_icons">
-            <a href="#"
+            <a onclick="like(firstHeart)" 
               ><i
                 class="fa fa-heart"
+                id="firstHeart"
                 style="
-                  color: rgb(216, 103, 103);
                   font-size: 22px;
                   padding-right: 30px;
                 "
               ></i
             ></a>
-            <a href="#"
+            <a onclick="alert('Are you sure do you want to share this ?')"
               ><i
                 class="fa fa-share-square"
-                style="
-                  color: rgb(191, 191, 191);
-                  font-size: 22px;
-                  padding-right: 30px;
-                "
-              ></i
-            ></a>
-            <a href="#"
-              ><i
-                class="fa fa-comment"
+                id="secoundtHeart"
                 style="
                   color: rgb(191, 191, 191);
                   font-size: 22px;
@@ -150,25 +153,39 @@
           <h2 class="social_head" style="font-size: 30px">
             Disease on new born Elephants
           </h2>
-          <p class="paragraph">
+          <p class="paragraph marginbottom">
             A strange disease were discoverd on the new born elephants, which
             make them difficult to walk beacause of a lump under the foot of the
             babies. Doctors are working on the cure.
           </p>
+          <a onclick="openMore(thirdpara,more3)" id="more3" style="color: rgba(29, 90, 28, 0.841)
+          ; font-size:large;">more..</a>
+          <div id="thirdpara">
+          <p class="paragraph" style="margin-top:-1rem ; margin-bottom: -10px;
+        ">
+            Now, genetic engineering and de-extinction company, Colossal Biosciences, is announcing plans 
+            to develop a vaccine that would prevent the deadly virus from infecting elephants - both in zoos and 
+            in their natural habitats.</br>
+          </p>
+          <a onclick="less(more3,thirdpara)" style="color: rgba(29, 90, 28, 0.841)
+          ; font-size:large">less</a>
+          </div>
+         
           <div class="social_media_icons">
-            <a href="#"
+            <a onclick="like(forthHeart)" 
               ><i
                 class="fa fa-heart"
+                id="forthHeart"
                 style="
-                  color: rgb(216, 103, 103);
                   font-size: 22px;
                   padding-right: 30px;
                 "
               ></i
             ></a>
-            <a href="#"
+            <a onclick="alert('Are you sure do you want to share this ?')"
               ><i
                 class="fa fa-share-square"
+                id="fifthHeart"
                 style="
                   color: rgb(191, 191, 191);
                   font-size: 22px;
@@ -176,16 +193,7 @@
                 "
               ></i
             ></a>
-            <a href="#"
-              ><i
-                class="fa fa-comment"
-                style="
-                  color: rgb(191, 191, 191);
-                  font-size: 22px;
-                  padding-right: 30px;
-                "
-              ></i
-            ></a>
+           
           </div>
         </div>
       </div>
@@ -204,23 +212,36 @@
           <h2 class="social_head" style="font-size: 30px">
             Lion is getting old
           </h2>
-          <p class="paragraph">
+          <p class="paragraph marginbottom">
             A 52 years old line named leo is not able to walk propery and finds
             difficult to eat food, Doctors told that the lion will die soon if
             this condition is not controlled.
           </p>
+          <a onclick="openMore(forthpara,more4)" id="more4" style="color: rgba(29, 90, 28, 0.841)
+          ; font-size:large;">more..</a>
+          <div id="forthpara">
+          <p class="paragraph" style="margin-top:-1rem ; margin-bottom: -10px;
+        ">
+            Ageing a lion allows us to identify it and assess its role within the population. Lions are difficult to 
+            age exactly, so we use broad categories. We use body size, nose colour, mane size and coat
+             condition to age a lion. There is great variation, and so we need to consider several
+              features to estimate age correctly. </br>
+          </p>
+          <a onclick="less(more4,forthpara)" style="color: rgba(29, 90, 28, 0.841)
+          ; font-size:large">less</a>
+          </div>
           <div class="social_media_icons">
-            <a href="#"
+            <a onclick="like(fifthHeart)"
               ><i
                 class="fa fa-heart"
+                id="fifthHeart"
                 style="
-                  color: rgb(216, 103, 103);
                   font-size: 22px;
                   padding-right: 30px;
                 "
               ></i
             ></a>
-            <a href="#"
+            <a onclick="alert('Are you sure do you want to share this ?')"
               ><i
                 class="fa fa-share-square"
                 style="
@@ -230,36 +251,8 @@
                 "
               ></i
             ></a>
-            <a href="#"
-              ><i
-                class="fa fa-comment"
-                style="
-                  color: rgb(191, 191, 191);
-                  font-size: 22px;
-                  padding-right: 30px;
-                "
-              ></i
-            ></a>
           </div>
         </div>
-      </div>
-      <div class="pagings">
-        <a
-          style="
-            padding: 10px;
-            background-color: rgb(226, 226, 226);
-            border-radius: 50px;
-            font-size: large;
-            font-weight: 600;
-          "
-          href="#"
-          >1</a
-        >
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-        <a href="#">NEXT</a>
       </div>
     </div>
   </div>

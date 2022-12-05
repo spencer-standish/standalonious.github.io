@@ -1,17 +1,73 @@
-html{
-  width: fit-content;
-  margin-left: 10px;
-  margin-right: 13px;
-  font-family: cursive;
-  background-image: url(/images/contact/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+html {
+  font-family: Verdana, sans-serif;
+}
+body {
+  margin: 0 auto;
 }
 h1 {
-    font-size: 4em;
-    color: #003955db;
-    text-align: center;
-    text-shadow: 2px 3px #649bbc;
-    margin-bottom: 0;
-  }
+  font-size: 4em;
+  color: #003955db;
+  text-align: center;
+  text-shadow: 2px 3px #649bbc;
+  margin-top: 2em;
+  margin-bottom: 10px;
+}
+label {
+  display: inline-block;
+  width: 10em;
+  text-align: left;
+}
+input,
+select {
+  margin-left: 1em;
+}
+select {
+  width: 13em;
+}
+span {
+  color: red;
+}
+#heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#submit_form {
+  background-color: #0e4764;
+  color: white;
+  width: 126px;
+  height: 34px;
+  font-weight: 600;
+}
+#reset_form {
+  background-color: #0e4764;
+  color: white;
+  width: 126px;
+  height: 34px;
+  font-weight: 600;
+}
+#box {
+  background-color: #ddd6d6;
+  padding: 20px 55px;
+  margin-left: 10px;
+}
+#side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 19em;
+  background-color: #0e47645e;
+  padding-top: 30px;
+}
+#column {
+  display: flex;
+  justify-content: space-evenly;
+}
+ #side img {
+  height: 100px;
+  width: 100px;
+  margin-top: 25px;
+}
+#column div {
+  margin-bottom: 1em;
+}
