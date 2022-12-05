@@ -1,8 +1,7 @@
 .container {
     display: grid;
-    height: 100vh;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    grid-template-rows: 0.6fr 0.3fr 2fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.6fr 0.3fr 2fr 1fr 1fr 1fr 1fr 0.1fr;
     grid-template-areas:
     "nav nav nav nav"
     ". header header ."
@@ -15,10 +14,46 @@
     font-family: 'Avenir', sans-serif;
 }
 body {
-    margin-top: 100px;
+    margin-top: -200px;
     background-color: azure;
 }
-
+#totopbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    transition-duration: 0.4s;
+}
+#totopbutton:hover {
+    cursor: pointer;
+    background-color: rgb(97, 97, 90);
+    color: white;
+}
+#funfactsbutton {
+    width: 100%;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+#funfactsbutton:hover {
+    background-color: #008CBA; 
+    color: white;
+}
 
 /* NAV CSS */
 /* .item_nav {
@@ -89,7 +124,7 @@ header h1 {
 .item_intro {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.5fr 0.1fr 0.1fr;
     grid-template-areas:
     "pb"
     "stats"
@@ -182,7 +217,7 @@ header h1 {
 .item_lifestyle {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
     grid-template-areas:
     "life_h2 life_h2"
     "life_img life_p";
@@ -204,7 +239,7 @@ header h1 {
 }
 #life_p {
     grid-area: life_p;
-    margin: auto;
+    margin-top: 50px;
     padding: 20px;
 }
 
@@ -244,7 +279,7 @@ header h1 {
 .item_population {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.3fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
     grid-template-areas:
     "pop_h2 pop_h2"
     "pop_img pop_section";
@@ -266,8 +301,8 @@ header h1 {
 }
 #pop_section {
     grid-area: pop_section;
-    margin: auto;
     padding: 20px;
+    margin-top: -30px;
 }
 
 

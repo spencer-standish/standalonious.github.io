@@ -2,315 +2,359 @@
 <html lang="en">
   <head>
     <title>Animal Merchandise</title>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="Images/Thumbnail.png" />
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="Images/Thumbnail.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Satisfy&family=Signika+Negative&display=swap" rel="stylesheet">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <meta
       name="description"
-      content="Animal Merchandise"
-    />
+      content="Animal Merchandise">
     <meta
       name="keywords"
-      content="animal, merchandise"
-    />
-    <link rel="stylesheet" href="CSS/home.css" />
-    <link rel="stylesheet" href="CSS/footer.css" />
-    <link rel="stylesheet" href="CSS/common.css" />
-    <link rel="stylesheet" href="CSS/header.css" />
-    <link rel="stylesheet" href="CSS/Animal Merchandise.css">
+      content="animal, merchandise">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/common.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/AnimalMerchandise.css">
   </head>
 
   <body>
+    <script src="/script/addtocart"></script>
     <div class="navclass"></div>
     <section class="home">
         <h1>WELCOME TO ANIMAL MERCHANDISE</h1><br>
         <h2>View our limited edition t-shirts, caps, bags and more!</h2>
         <main>
+            <!-- T-Shirt -->
             <div id="image1">
                 <h3>T-Shirt</h3>
                 <div class="options">
-                    <form class="purchase_form" action="purchase.php" method="post">
-                        Quantity
-                        <select class="quantity" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        &nbsp; Size
-                        <select class="size" size="1">
-                            <option value="XS">XS</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                            <option value="XXL">XXL</option>
-                        </select>
-                        &nbsp; Color
-                        <select class="color" size="1">
-                            <option value="pink">Pink</option>
-                            <option value="blue">Blue</option>
-                            <option value="gray">Gray</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <br><br><button type="submit"><img src="Images/cart.png" height="30px" width="30px" alt="Cart"> Add to Cart</button>
-                    </form>
+                    <!-- T-Shirt Quantity selection-->
+                    Quantity
+                    <select class="quantity" size="1">
+                        <option value="Select quantity">Select quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- T-Shirt Size selection-->
+                    &nbsp; Size
+                    <select class="size" size="1">
+                        <option value="Select size">Select size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <!-- T-Shirt Color selection-->
+                    &nbsp; Color
+                    <select class="color" size="1">
+                        <option value="Select color">Select color</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Gray">Gray</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br><button type="submit" id="addtocart1"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
+            <!-- Tote Bag -->
             <div id="image2">
                 <h3>Tote Bag</h3>
                 <div class="options">
-                    <form class="purchase_form" action="purchase.php" method="post">
-                        Quantity
-                        <select class="quantity" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        &nbsp; Size
-                        <select class="size" size="1">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        &nbsp; Color
-                        <select class="color" size="1">
-                            <option value="pink">Pink</option>
-                            <option value="blue">Blue</option>
-                            <option value="gray">Gray</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <br><br><button type="submit"><img src="Images/cart.png" height="30px" width="30px" alt="Cart"> Add to Cart</button>
-                    </form>
+                    <!-- Tote Bag Quantity selection-->
+                    Quantity
+                    <select class="quantity" size="1">
+                        <option value="Select quantity">Select quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- Tote Bag Size selection-->
+                    &nbsp; Size
+                    <select class="size" size="1">
+                        <option value="Select size">Select size</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <!-- Tote Bag Color selection-->
+                    &nbsp; Color
+                    <select class="color" size="1">
+                        <option value="Select color">Select color</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Gray">Gray</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br><button type="submit" id="addtocart2"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
+            <!-- Cap -->
             <div id="image3">
                 <h3>Cap</h3>
                 <div class="options">
-                    <form class="purchase_form" action="purchase.php" method="post">
-                        Quantity
-                        <select class="quantity" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        &nbsp; Size
-                        <select class="size" size="1">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        &nbsp; Color
-                        <select class="color" size="1">
-                            <option value="pink">Pink</option>
-                            <option value="blue">Blue</option>
-                            <option value="gray">Gray</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <br><br><button type="submit"><img src="Images/cart.png" height="30px" width="30px" alt="Cart"> Add to Cart</button>
-                    </form>
+                    <!-- Cap Quantity selection-->
+                    Quantity
+                    <select class="quantity" size="1">
+                        <option value="Select quantity">Select quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- Cap Size selection-->
+                    &nbsp; Size
+                    <select class="size" size="1">
+                        <option value="Select size">Select size</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <!-- Cap Color selection-->
+                    &nbsp; Color
+                    <select class="color" size="1">
+                        <option value="Select color">Select color</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Gray">Gray</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br><button type="submit" id="addtocart3"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
+            <!-- Apron -->
             <div id="image4">
                 <h3>Apron</h3>
                 <div class="options">
-                    <form class="purchase_form" action="purchase.php" method="post">
-                        Quantity
-                        <select class="quantity" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        &nbsp; Size
-                        <select class="size" size="1">
-                            <option value="XS">XS</option>
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                            <option value="XL">XL</option>
-                            <option value="XXL">XXL</option>
-                        </select>
-                        &nbsp; Color
-                        <select class="color" size="1">
-                            <option value="pink">Pink</option>
-                            <option value="blue">Blue</option>
-                            <option value="gray">Gray</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <br><br><button type="submit"><img src="Images/cart.png" height="30px" width="30px" alt="Cart"> Add to Cart</button>
-                    </form>
+                    <!-- Apron Quantity selection-->
+                    Quantity
+                    <select class="quantity" size="1">
+                        <option value="Select quantity">Select quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- Apron Size selection-->
+                    &nbsp; Size
+                    <select class="size" size="1">
+                        <option value="Select size">Select size</option>
+                        <option value="XS">XS</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                        <option value="XXL">XXL</option>
+                    </select>
+                    <!-- Apron Color selection-->
+                    &nbsp; Color
+                    <select class="color" size="1">
+                        <option value="Select color">Select color</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Gray">Gray</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br><button type="submit" id="addtocart4"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
+            <!-- Baby Blanket -->
             <div id="image5">
                 <h3>Baby Blanket</h3>
                 <div class="options">
-                    <form class="purchase_form" action="purchase.php" method="post">
-                        Quantity
-                        <select class="quantity" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        &nbsp; Color
-                        <select class="color" size="1">
-                            <option value="pink">Pink</option>
-                            <option value="blue">Blue</option>
-                            <option value="gray">Gray</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <br><br><button type="submit"><img src="Images/cart.png" height="30px" width="30px" alt="Cart"> Add to Cart</button>
-                    </form>
+                    <!-- Baby Blanket Quantity selection-->
+                    Quantity
+                    <select class="quantity" size="1">
+                        <option value="Select quantity">Select quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- Baby Blanket Color selection-->
+                    &nbsp; Color
+                    <select class="color" size="1">
+                        <option value="Select color">Select color</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Gray">Gray</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br><button type="submit" id="addtocart5"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
+            <!-- Pillow -->
             <div id="image6">
                 <h3>Pillow</h3>
                 <div class="options">
-                    <form class="purchase_form" action="purchase.php" method="post">
-                        Quantity
-                        <select class="quantity" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        &nbsp; Size
-                        <select class="size" size="1">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        &nbsp; Color
-                        <select class="color" size="1">
-                            <option value="pink">Pink</option>
-                            <option value="blue">Blue</option>
-                            <option value="gray">Gray</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <br><br><button type="submit"><img src="Images/cart.png" height="30px" width="30px" alt="Cart"> Add to Cart</button>
-                    </form>
+                    <!-- Pillow Quantity selection-->
+                    Quantity
+                    <select class="quantity" size="1">
+                        <option value="Select quantity">Select quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- Pillow Size selection-->
+                    &nbsp; Size
+                    <select class="size" size="1">
+                        <option value="Select size">Select size</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <!-- Pillow Color selection-->
+                    &nbsp; Color
+                    <select class="color" size="1">
+                        <option value="Select color">Select color</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Gray">Gray</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br><button type="submit" id="addtocart6"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
+            <!-- Grocery Bag -->
             <div id="image7">
                 <h3>Grocery Bag</h3>
                 <div class="options">
-                    <form class="purchase_form" action="purchase.php" method="post">
-                        Quantity
-                        <select class="quantity" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        &nbsp; Size
-                        <select class="size" size="1">
-                            <option value="S">S</option>
-                            <option value="M">M</option>
-                            <option value="L">L</option>
-                        </select>
-                        &nbsp; Color
-                        <select class="color" size="1">
-                            <option value="pink">Pink</option>
-                            <option value="blue">Blue</option>
-                            <option value="gray">Gray</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <br><br><button type="submit"><img src="Images/cart.png" height="30px" width="30px" alt="Cart"> Add to Cart</button>
-                    </form>
+                    <!-- Grocery Bag Quantity selection-->
+                    Quantity
+                    <select class="quantity" size="1">
+                        <option value="Select quantity">Select quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- Grocery Bag Size selection-->
+                    &nbsp; Size
+                    <select class="size" size="1">
+                        <option value="Select size">Select size</option>
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <!-- Grocery Bag Color selection-->
+                    &nbsp; Color
+                    <select class="color" size="1">
+                        <option value="Select color">Select color</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Gray">Gray</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br><button type="submit" id="addtocart7"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
+            <!-- Baby Bib -->
             <div id="image8">
                 <h3>Baby Bib</h3>
                 <div class="options">
-                    <form class="purchase_form" action="purchase.php" method="post">
-                        Quantity
-                        <select class="quantity" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        &nbsp; Color
-                        <select class="color" size="1">
-                            <option value="pink">Pink</option>
-                            <option value="blue">Blue</option>
-                            <option value="gray">Gray</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <br><br><button type="submit"><img src="Images/cart.png" height="30px" width="30px" alt="Cart"> Add to Cart</button>
-                    </form>
+                    <!-- Baby Bib Quantity selection-->
+                    Quantity
+                    <select class="quantity" size="1">
+                        <option value="Select quantity">Select quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- Baby Bib Color selection-->
+                    &nbsp; Color
+                    <select class="color" size="1">
+                        <option value="Select color">Select color</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Gray">Gray</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br><button type="submit" id="addtocart8"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
+            <!-- Keychain -->
             <div id="image9">
                 <h3>Keychain</h3>
                 <div class="options">
-                    <form class="purchase_form" action="purchase.php" method="post">
-                        Quantity
-                        <select class="quantity" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        &nbsp; Color
-                        <select class="color" size="1">
-                            <option value="pink">Pink</option>
-                            <option value="blue">Blue</option>
-                            <option value="gray">Gray</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <br><br><button type="submit"><img src="Images/cart.png" height="30px" width="30px" alt="Cart"> Add to Cart</button>
-                    </form>
+                    <!-- Keychain Quantity selection-->
+                    Quantity
+                    <select class="quantity" size="1">
+                        <option value="Select quantity">Select quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- Keychain Color selection-->
+                    &nbsp; Color
+                    <select class="color" size="1">
+                        <option value="Select color">Select color</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Gray">Gray</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br><button type="submit" id="addtocart9"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
+            <!-- Watch -->
             <div id="image10">
                 <h3>Watch</h3>
                 <div class="options">
-                    <form class="purchase_form" action="purchase.php" method="post">
-                        Quantity
-                        <select class="quantity" size="1">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                        &nbsp; Color
-                        <select class="color" size="1">
-                            <option value="pink">Pink</option>
-                            <option value="blue">Blue</option>
-                            <option value="gray">Gray</option>
-                            <option value="white">White</option>
-                            <option value="black">Black</option>
-                        </select>
-                        <br><br><button type="submit"><img src="Images/cart.png" height="30px" width="30px" alt="Cart"> Add to Cart</button>
-                    </form>
+                    <!-- Watch Quantity selection-->
+                    Quantity
+                    <select class="quantity" size="1">
+                        <option value="Select quantity">Select quantity</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <!-- Watch Color selection-->
+                    &nbsp; Color
+                    <select class="color" size="1">
+                        <option value="Select color">Select color</option>
+                        <option value="Pink">Pink</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Gray">Gray</option>
+                        <option value="White">White</option>
+                        <option value="Black">Black</option>
+                    </select>
+                    <br><br><button type="submit" id="addtocart10"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
+            <a href="/Thankyou.html">
+                <button type="submit" id="purchase">Purchase</button>
+            </a>
         </main> 
     </section>
     <div class="footerclass"></div>

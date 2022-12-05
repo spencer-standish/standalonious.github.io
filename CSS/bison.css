@@ -1,10 +1,8 @@
 .container {
     display: grid;
-    height: 100vh;
     grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-    grid-template-rows: 0.6fr 0.3fr 2fr 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.3fr 1fr 0.5fr 0.4fr 0.4fr 0.5fr;
     grid-template-areas:
-    "nav nav nav nav"
     ". header header ."
     ". intro intro ."
     ". distribution distribution ."
@@ -16,9 +14,46 @@
 }
 body {
     margin-top: 100px;
-    background-color: azure;
+    background-color: rgb(162, 157, 10);
 }
-
+#totopbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    transition-duration: 0.4s;
+}
+#totopbutton:hover {
+    cursor: pointer;
+    background-color: rgb(97, 97, 90);
+    color: white;
+}
+#funfactsbutton {
+    width: 100%;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f3f306;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+#funfactsbutton:hover {
+    background-color: #f3f306;
+    color: rgb(81, 94, 39);
+    font-weight: 900;
+}
 
 /* NAV CSS */
 /* .item_nav {
@@ -258,6 +293,7 @@ header h1 {
     background-color: white;
     grid-area: population;
     border: 2px solid #0D0F38;
+    margin-bottom: -200px;
 }
 #pop_h2 {
     grid-area: pop_h2;

@@ -52,15 +52,16 @@
         <div class="divistion">
         <div class="navigation">
           <ul class="sidenav2">
-            <li><a href="#" class="theriary_head">SAVE ANIMAL <i class="fa fa-angle-right"></i></a></li>
-            <li><a href="#" class="theriary_head">NEWS & FEEDS<i class="fa fa-angle-right"></i></a></li>
-            <li><a href="#" class="theriary_head">LOCATION<i class="fa fa-angle-right"></i></a></li>
+            <li><a onclick="scrollToId(saveAnimal)" class="theriary_head">SAVE ANIMAL <i class="fa fa-angle-right"></i></a></li>
+            <li><a onclick="scrollToId(socialMedia)"class="theriary_head">NEWS & FEEDS<i class="fa fa-angle-right"></i></a></li>
+            <li><a onclick="scrollToId(locate)" class="theriary_head">LOCATION<i class="fa fa-angle-right"></i></a></li>
           </ul>
         </div>
         
         <!-- body of the home page -->
         <article>
           <!-- first section containing the importantce of wild life conservation -->
+          <div  id="saveAnimal"></div>
           <div class="first-content"> 
             <h2 class="primary_head" style="text-align:end;color: white;">LET US UNITE</h2>
             <h2 class="secoundary_head" style="text-align:end;color: white;">AND SAVE ANIMALS</h2>
@@ -80,7 +81,7 @@
               
         </div>
         </div>
-
+        <div  id="socialMedia"></div>
         <div class="secound-content"> 
           <h2 class="primary_head" >LET SEE</h2>
           <h2 class="secoundary_head" >WHAT WE GOT</h2>  
@@ -90,7 +91,7 @@
 
       </div>
      
-
+ <div id="locate"></div>
       <div class="third-content"> 
         <h2 class="primary_head" >LET LOCATE</h2>
         <h2 class="secoundary_head" >ANIMALS</h2>
@@ -104,7 +105,7 @@
         <div class = "last_content">
           <img src="Images/5f83a433c1dafe79d676027f_Social-Gathering-Restrictions-in-Canada-Map-HEADER.jpeg" height="500px" width="700px">
               
-          <div class="hotspot" style="top: 37vh; left: 12vw; height: 30px; width: 30px;"></div>
+          <div class="hotspot map1"></div>
           <div>
               <div class="wash"></div>
               <div style="position: absolute; top: 0; left:24px ;">
@@ -117,7 +118,7 @@
               </div>
           </div>
               
-          <div class="hotspot" style="top: 41vh; left: 38vw; height: 30px; width: 30px;"></div>
+          <div class="hotspot map2" ></div>
           <div>
               <div class="wash"></div>
               <div style="position: absolute; top: 0; left: 24px;">
@@ -125,6 +126,42 @@
                   <h2 class="theriary_head" style="color:rgb(255, 111, 0);font-size: large;">MANITOBA</h2>
                   <h2 class="theriary_head" style="color:rgb(255, 255, 255);">Animal : MOOSE</h2>
                   <h2 class="theriary_head" style="color:rgb(144, 19, 19);">Count : 50</h2>
+
+                </div>
+              </div>
+          </div>
+          <div class="hotspot map3" ></div>
+          <div>
+              <div class="wash"></div>
+              <div style="position: absolute; top: 0; left: 24px;">
+                <div class="animal_box">
+                  <h2 class="theriary_head" style="color:rgb(255, 111, 0);font-size: large;">YUKON</h2>
+                  <h2 class="theriary_head" style="color:rgb(255, 255, 255);">Animal :POLAR BEAR</h2>
+                  <h2 class="theriary_head" style="color:rgb(144, 19, 19);">Count : 200</h2>
+
+                </div>
+              </div>
+          </div>
+          <div class="hotspot map4" ></div>
+          <div>
+              <div class="wash"></div>
+              <div style="position: absolute; top: 0; left: 24px;">
+                <div class="animal_box">
+                  <h2 class="theriary_head" style="color:rgb(255, 111, 0);font-size: large;">ONTARIO</h2>
+                  <h2 class="theriary_head" style="color:rgb(255, 255, 255);">Animal :BEAVER</h2>
+                  <h2 class="theriary_head" style="color:rgb(144, 19, 19);">Count : 300</h2>
+
+                </div>
+              </div>
+          </div>
+          <div class="hotspot map5" ></div>
+          <div>
+              <div class="wash"></div>
+              <div style="position: absolute; top: 0; left: 24px;">
+                <div class="animal_box">
+                  <h2 class="theriary_head" style="color:rgb(255, 111, 0);font-size: large;">QUEBEC</h2>
+                  <h2 class="theriary_head" style="color:rgb(255, 255, 255);">Animal :ALPAKA</h2>
+                  <h2 class="theriary_head" style="color:rgb(144, 19, 19);">Count : 600</h2>
 
                 </div>
               </div>
@@ -141,6 +178,7 @@
 </html>
 
 <!-- java script to import footer navigation and news and updated to the home page -->
+<script src="script/home.js"> </script>
 <script type="text/javascript">
     $(function(){
         $(".navclass").load("navigation.html");
@@ -150,5 +188,5 @@
      } );   
      $(function(){
         $(".socialclass").load("newsAndFeeds.html");
-     } );   
+     } );  
 </script>
