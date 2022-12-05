@@ -135,9 +135,6 @@ background-color: blueviolet;
     display: flex;
     flex-direction: column;
   }
-  .banner img {
-    /* margin-top: 50px; */
-  }
   .banner h1 {
     margin: 0 auto;
     display: grid;
