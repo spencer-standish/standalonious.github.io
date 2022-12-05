@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Contact Us</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <link rel="shortcut icon" href="images/Thumbnail.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
@@ -18,71 +18,120 @@
       animals,responsibility,NGO,Animal protection act,
       Raindeer,whales,rabits,dogs,moose,beevers"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/contact.css" />
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
-</head>
-<body>
+  </head>
+  <body>
     <!-- header -->
     <div class="navclass"></div>
-<main>
-  <!-- Main content -->
-    <h1>CONTACT US</h1>
-    <div id="column">
-    <div id="box">
-    <p>Thanks for dropping by! Whether you have a question, a comment or a suggestion to share, <br> we look forward to hearing from you.</p>
-    <div class="contactform">
-    <form action="confirmation.html" method="get">
-      <div>
-        <label for="name">Your First Name</label>
-        <input type="text" name="fname" id="fname"/>
-        <span>*</span><br />
+    <main>
+      <!-- Main content -->
+      <h1>CONTACT US</h1>
+      <div id="column">
+        <div id="box">
+          <p>
+            Thanks for dropping by! Whether you have a question, a comment or a
+            suggestion to share, <br />
+            we look forward to hearing from you.
+          </p>
+          <div class="contactform">
+            <form action="confirmation.html" method="get">
+              <div>
+                <label for="fname">Your First Name</label>
+                <input type="text" name="fname" id="fname" />
+                <span>*</span><br />
+              </div>
+              <div>
+                <label for="lname">Your Last Name</label>
+                <input type="text" name="lname" id="lname" />
+                <span>*</span><br />
+              </div>
+              <div>
+                <label for="email">Your Email Address</label>
+                <input type="email" name="email" id="email" />
+                <span>*</span><br />
+              </div>
+              <div id="query">
+                What is your query about? <span>*</span> <br />
+                <br />
+                <input
+                  type="radio"
+                  name="category"
+                  id="vol"
+                  value="volunteering"
+                />
+                <label for="vol">Volunteering</label>
+                <input
+                  type="radio"
+                  name="category"
+                  id="donation"
+                  value="donation"
+                />
+                <label for="donation">Donations</label>
+                <input
+                  type="radio"
+                  name="category"
+                  id="merch"
+                  value="merchandise"
+                />
+                <label for="merch">Merchandise</label>
+                <input
+                  type="radio"
+                  name="category"
+                  id="other"
+                  value="other"
+                  checked
+                />
+                <label for="other">Others</label> <br />
+              </div>
+              <div>
+                Write your comments here! <span>*</span><br />
+                <br />
+                <textarea
+                  name="comments"
+                  id="comments"
+                  cols="50"
+                  rows="5"
+                ></textarea
+                ><br />
+              </div>
+              <div>
+                <input
+                  type="button"
+                  name="btnSubmit"
+                  id="submit_form"
+                  value="Submit"
+                />
+                <input
+                  type="button"
+                  name="btnReset"
+                  id="reset_form"
+                  value="Reset"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div id="side">
+          <img src="/Images/contact/phone.png" alt="phone icon" />
+          <p>
+            Call: <b>647-504-1345</b> <br />
+            MON - FRI, 8AM - 6PM EST
+          </p>
+          <img src="/Images/contact/address.png" alt="address icon" />
+          <p>CanSave <br />1468 Abbs Avenue <br />Toronto, ON</p>
+        </div>
       </div>
-        <div>
-          <label for="name">Your Last Name</label>
-        <input type="text" name="lname" id="lname" />
-        <span>*</span><br />
-        </div>
-        <div>
-          <label for="email">Your Email Address</Address></label>
-          <input type="email" name="email" id="email" />
-          <span>*</span><br />
-        </div>
-        <div id="query">
-  What is your query about? <span>*</span> <br /> <br>
-      <input type="radio" name="category" id="vol" value="volunteering" />
-      <label for="vol">Volunteering</label> 
-      <input type="radio" name="category" id="donation" value="donation" />
-      <label for="donation">Donations</label> 
-      <input type="radio" name="category" id="merch" value="merchandise" />
-      <label for="merch">Merchandise</label> 
-      <input type="radio" name="category" id="other" value="other" checked/>
-      <label for="other">Others</label> <br /></div>
-      <div>
-  Write your comments here! <span>*</span><br /> <br>
-        <textarea name="comments" id="comments" cols="50" rows="5"></textarea><br />
-        </div>
-        <div>
-          <input type="button" name="btnSubmit" id="submit_form" value="Submit" />
-          <input type="button" name= "btnReset" id="reset_form" value="Reset" />
-        </div>
-    </form>
-  </div>
-  </div>
-  <div id="side">
-  <img src="/Images/contact/phone.png" alt="phone icon">
-  <p>Call: <b>647-504-1345</b> <br> MON - FRI, 8AM - 6PM EST </p>
-  <img src="/Images/contact/address.png" alt="address icon">
-  <p>CanSave <br>1468 Abbs Avenue <br>Toronto, ON</p></div></div>
-</main>
- <!-- Main content ends -->
+    </main>
+    <!-- Main content ends -->
     <!-- footer -->
     <div class="footerclass"></div>
     <!-- Java Script -->
     <script src="script/contact.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript">
+    <script>
       $(function () {
         $(".navclass").load("navigation.html");
       });
@@ -92,4 +141,3 @@
     </script>
   </body>
 </html>
-
