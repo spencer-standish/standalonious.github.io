@@ -177,7 +177,7 @@ main {
 #image9:hover {
     background-image: url('/Images/keychainback.PNG');
     width: 650px;
-    height: 660px;
+    height: 620px;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -186,7 +186,7 @@ main {
 #image10 {
     background-image: url('/Images/watch.PNG');
     width: 650px;
-    height: 660px;
+    height: 625px;
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 300px;
