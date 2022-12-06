@@ -197,6 +197,11 @@ main {
     text-align: center;
 }
 
+.options1 {
+    margin-top: 640px;
+    text-align: center;
+}
+
 button {
     width: 140px;
     height: 40px;
