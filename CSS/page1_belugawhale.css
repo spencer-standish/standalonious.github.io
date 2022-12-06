@@ -6,7 +6,7 @@ html {
   background-size: cover;
   background-attachment: fixed;
 }
-body{
+body {
   margin: 0 auto;
 }
 #fullContent h1 {
@@ -51,34 +51,30 @@ body{
   flex-basis: 20em;
   padding: 40px 0;
 }
-.distribution {
-  padding: 50px 8px;
+.distribution,
+.population,
+.mating {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  column-gap: 32px;
   flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 23px;
+  padding: 35px 10px;
+}
+.habitat,
+.diet,
+.facts {
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
+  padding: 35px 10px;
 }
 .distpara {
   background-color: #0885b6;
   border-radius: 9px;
 }
-.habitat {
-  display: flex;
-  padding: 50px 8px;
-  align-items: center;
-  column-gap: 26px;
-}
 .habitatpara {
   background-color: #0a2446bf;
   border-radius: 9px;
-}
-.population {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  padding: 50px 8px;
-  column-gap: 32px;
 }
 .poppara {
   background-color: #36647c;
@@ -102,22 +98,9 @@ body{
   height: 417px;
   width: 550px;
 }
-.diet {
-  padding: 50px 8px;
-  display: flex;
-  align-items: center;
-  column-gap: 32px;
-}
 .dietpara {
   background-color: #46505c;
   border-radius: 9px;
-}
-.mating {
-  display: flex;
-  align-items: center;
-  column-gap: 32px;
-  padding: 50px 8px;
-  flex-direction: row-reverse;
 }
 .matingpara {
   background-color: #09656f;
@@ -131,12 +114,15 @@ main {
 }
 .facts ul {
   list-style-image: url(../images/beluga/beluga-icon.png);
-  padding: 0px 4em 19px;
+  padding: 0px 5px 19px 4em;
 }
 .facts li {
   color: #0d0f38;
   font-size: 18px;
   padding: 8px 10px;
+}
+#slideshow_images {
+  margin-right: 1em;
 }
 #fullContent h2 {
   font-size: 2em;
@@ -175,12 +161,15 @@ main {
   .habitat,
   .population,
   .diet,
-  .mating {
+  .mating,
+  .facts {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
+    margin: 20px 15px;
   }
   img {
-    padding-top: 3.5em;
+    margin-top: 2em;
   }
   .value {
     font-size: x-large;
@@ -191,6 +180,13 @@ main {
     text-align: center;
   }
   #mainimage {
-    margin-left: 0px;
+    padding-top: 0;
+    margin-left: 0;
+  }
+  main {
+    margin-top: 0;
+  }
+  #slideshow {
+    margin-top: 0;
   }
 }
