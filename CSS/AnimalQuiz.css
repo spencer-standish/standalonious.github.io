@@ -39,7 +39,8 @@ body{
     padding: 5px;
     width: 80vw;
     height: 20vh;
-    background-color: #9eb1b3;   
+    background-color: #9eb1b3;
+    align-items: center;   
         
 }
 .option{    
