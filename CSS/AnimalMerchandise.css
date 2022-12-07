@@ -139,7 +139,7 @@ main {
 
 /* Grocery Bag Back */
 #image7:hover {
-    background-image: url('../Images/grocerbagback.PNG');
+    background-image: url('../Images/grocerybagback.PNG');
     width: 650px;
     height: 660px;
     background-repeat: no-repeat;
