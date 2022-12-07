@@ -18,7 +18,7 @@ body{
     padding: 5px;
     width: 80vw;
     height: 10vh;
-    background-color: #c7dddf;
+    background-color: #24e9ff;
     font-size: x-large;
     text-align: center;
       
@@ -39,7 +39,7 @@ body{
     padding: 5px;
     width: 80vw;
     height: 20vh;
-    background-color: #9eb1b3;
+    background-color: #b9f8ff;
     align-items: center;   
         
 }
@@ -52,7 +52,7 @@ body{
     border-radius: 25%;
 }
 .option:hover{
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(255, 239, 119);
 }
 .navigation{
     width: 80vw;
@@ -61,7 +61,7 @@ body{
     padding: 5px;
     display: flex;
     justify-content: space-around;
-    background-color:#c7dddf;
+    background-color:#c3eef3;
 }
   
 .evaluate,.next{
@@ -72,11 +72,11 @@ body{
 }
 .evaluate{
     
-    background-color: #50DBB4;
+    background-color: #00ffb7;
 }
 .next{
     color: white;
-    background-color: #BF3325;
+    background-color: #ff594a;
 }
 
 .home, main{
