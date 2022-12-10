@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="Images/Thumbnail.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <meta
       name="description"
@@ -21,6 +21,9 @@
       animals,responsibility,NGO,Animal protection act,
       Raindeer,,RED PANDAwhales,rabits,dogs,moose,beevers"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="CSS/footer.css" />
     <link rel="stylesheet" href="CSS/common.css" />
     <link rel="stylesheet" href="CSS/header.css" />
@@ -60,10 +63,11 @@
             <iframe
               src="https://www.youtube.com/embed/X0bE86akgmw"
               title="YouTube video player"
+              width="560" height="315"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
-              style="border-radius: 20px"
+              style="border-radius: 20px;box-shadow: 5px 5px 30px rgb(52 51 51);"
             ></iframe>
           </div>
         </div>
@@ -157,10 +161,13 @@
         </p>
       </div>
       <div id="domestic-image">
-        <img
+        <a>
+        <img id="slideshow"
           src="Images/caramelo.webp"
-          style="padding: 30px; border-radius: 50px"
+          style="padding: 30px; border-radius: 50px;height: 27rem;
+          width: 35rem;"
         />
+      </a>
       </div>
     </section>
     <section class="facts">
@@ -173,6 +180,8 @@
           src="Images/371873.png"
           style="width: 4rem; padding-right: 20px; height: 4rem"
         />
+        <div>
+        <h2>FUN FACT ONE</h2>
         <p class="paragraph secound_text" style="width: 90%">
           Alpaca wool is waterproof. Moreover, it can absorb moisture due to its
           surprising ability to simulate cotton in moisture recovery. Thanks to
@@ -180,11 +189,14 @@
           feeling lighter than wool while warmer than cotton.
         </p>
       </div>
+      </div>
       <div class="factslist">
         <img
           src="Images/371873.png"
           style="width: 4rem; padding-right: 20px; height: 4rem"
         />
+        <div>
+          <h2>FUN FACT TWO</h2>
         <p class="paragraph secound_text" style="width: 90%">
           Generally, there are two types of alpacas. These are suri alpacas and
           huacaya alpacas. Suri alpacas are covered with fiber that overgrows to
@@ -192,38 +204,48 @@
           with a shaggy, bushy, and waved coat, just like a teddy bear. Huacyas
           make up 90% of all alpacas in North America.
         </p>
+        </div>
       </div>
       <div class="factslist">
         <img
           src="Images/371873.png"
           style="width: 4rem; padding-right: 20px; height: 4rem"
         />
+        <div>
+          <h2>FUN FACT THREE</h2>
         <p class="paragraph secound_text" style="width: 90%">
           Llamas and alpacas are easily interbred, generating a species called
           huarizo.
         </p>
+        </div>
       </div>
       <div class="factslist">
         <img
           src="Images/371873.png"
           style="width: 4rem; padding-right: 20px; height: 4rem"
         />
+        <div>
+          <h2>FUN FACT FOUR</h2>
         <p class="paragraph secound_text" style="width: 90%">
           Buzzing or humming sound is what you can usually hear from alpacas.
           It’s a kind of musical crooning. For alpacas, humming can serve as a
           signal of danger, curiosity, satisfaction, anxiety, fright, distress,
           or just boredom.
         </p>
+        </div>
       </div>
       <div class="factslist">
         <img
           src="Images/371873.png"
           style="width: 4rem; padding-right: 20px; height: 4rem"
         />
+        <div>
+          <h2>FUN FACT FIVE</h2>
         <p class="paragraph secound_text" style="width: 90%">
           As known, camels spit when they are angry or irritated while alpacas,
           being distant relatives of camels, do the same when upset.
         </p>
+        </div>
       </div>
     </section>
     <!-- -----body conetent ends--------- -->
@@ -234,11 +256,6 @@
 </html>
 
 <!-- java script to import footer and navigation -->
-<script type="text/javascript">
-  $(function () {
-    $(".footerclass").load("footer.html");
-  });
-  $(function () {
-    $(".navclass").load("navigation.html");
-  });
+<script src="script/alpaka.js" type="text/javascript">
 </script>
+

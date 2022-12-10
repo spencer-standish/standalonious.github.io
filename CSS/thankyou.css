@@ -1,0 +1,25 @@
+body {
+    background-image: url('/Images/Thank\ you.jfif');
+    background-size: 100em 50em;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-style: italic;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    position: relative;
+    left: -90px;
+    top: 20px;
+    font-size: 75px;
+}
+
+p{
+    font-style: italic;
+    font-family: 'Nanum Brush Script', cursive;;
+    text-align: center;
+    position: relative;
+    left: -90px;
+    top: 40px;
+    font-size: 40px;
+}

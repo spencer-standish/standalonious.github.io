@@ -1,13 +1,13 @@
 /* ----- desktop view ------- */
 html {
-  width: fit-content;
-  margin-left: 10px;
-  margin-right: 13px;
-  font-family: cursive;
+  font-family: Verdana, sans-serif;
   background-image: url(../images/moose/moose-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+body{
+  margin: 0 auto;
 }
 .section1 {
   display: flex;
@@ -16,13 +16,23 @@ html {
   column-gap: 80px;
   flex-direction: row-reverse;
 }
+#fullContent p {
+  font-size: 17px;
+  padding: 2px 30px;
+  line-height: 30px;
+}
 .intro {
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
-.intropara {
+#intropara {
   flex-basis: 50em;
+}
+#intropara p{
+  font-size: 18px;
+  line-height: 30px;
+
 }
 .box {
   flex-basis: 20em;
@@ -32,6 +42,7 @@ html {
   justify-content: space-around;
   align-items: center;
   column-gap: 32px;
+  padding: 50px 8px;
 }
 .distpara {
   background-color: #ff0100f5;
@@ -40,10 +51,10 @@ html {
 }
 .habitat {
   display: flex;
-  padding-top: 50px;
   flex-direction: row-reverse;
   align-items: center;
   column-gap: 26px;
+  padding: 50px 8px;
 }
 .habitatpara {
   background-color: #a4b066;
@@ -54,6 +65,7 @@ html {
   align-items: center;
   padding: 50px 5px;
   column-gap: 32px;
+  padding: 50px 8px;
 }
 .poppara {
   background-color: #9f7950e3;
@@ -76,6 +88,7 @@ img {
 }
 .diet {
   display: flex;
+  padding: 50px 8px;
   align-items: center;
   column-gap: 32px;
   flex-direction: row-reverse;
@@ -88,7 +101,7 @@ img {
   display: flex;
   align-items: center;
   column-gap: 32px;
-  padding: 50px 5px;
+  padding: 50px 8px;
 }
 .matingpara {
   background-color: #5d849fe8;
@@ -121,28 +134,22 @@ h1 + p {
   list-style-type: none;
   padding: 25px 0;
 }
-p {
-  font-size: 20px;
-  padding: 2px 30px;
-}
 .facts ul {
   list-style-image: url(../images/moose/moose-icon.jpg);
   padding: 0px 4em 19px;
 }
 .facts li {
   color: #0d0f38;
-  font-size: 20px;
+  font-size: 18px;
   padding: 8px 10px;
 }
-h2 {
+#fullContent h2 {
   font-size: 2em;
   font-weight: 700;
   color: #052b09;
-  margin-top: 0;
-  padding-top: 10px;
   padding-left: 1em;
 }
-h3 {
+#fullContent h3 {
   font-weight: 600;
   color: #4b291f;
   font-size: 22px;

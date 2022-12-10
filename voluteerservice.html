@@ -43,19 +43,45 @@
     </div>
     
     <div class="container">
-        <form name="volunteerform" action="" method="get" class="submission-form">
-            <!-- <fieldset> -->
+        <!-- <form name="volunteerform" action="/confirm.html" method="post"  id="form" onsubmit="return validateForm()">
+            <!-- <fieldset> 
                 <h3>Enroll for Volunteer Service</h3>
                 <label for="name"> Name: </label>
-                <input type="text" name="name" id="name"  /><br /><br />
-                <label for="email"> E mail:</label> <input type="email" name="email" size="3" /> <br /><br />
-                <label for="conatct">Contact no:</label><input type="tel"><br /><br />
-                <input type="button" name="btnReg" value="Register" />
-            <!-- </fieldset> -->
+                <input type="text" name="name" id="name"  /><span class="formerror"></span><br /><br />
+                <label for="email"> E mail:</label> <input type="email" name="email" id="email" size="3" /><span class="formerror"></span> <br /><br />
+                <label for="conatct">Contact no:</label><input type="tel" id="contact"><span class="formerror"></span><br /><br />
+                <input type="submit" name="btnReg" id="register" value="Register" />
+             </fieldset > 
+        </form> -->
+
+        <form aciton ="/confirm.html" name="myForm" onsubmit="return validateForm()" method="post" class="form">
+            <div class="form-div" id="name">
+                Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+            </div>
+    
+            <div class="form-div" id="email">
+                Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
+            </div>
+    
+            <div class="form-div" id="phone">
+                Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+            </div>
+    
+            <div class="form-div" id="pass">
+                Password: <input type="password" name="fpass" required><b><span class="formerror"</span></b>
+            </div>
+    
+            <div class="form-div" id="cpass">
+                Confirm Password: <input type="password" name="fcpass" required><b><span class="formerror"></span></b>
+            </div>
+    
+            <input class="form-button" type="submit" value="Submit">
+            
         </form>
 
+       
     </div>
-
+    <script src="script/form.js"></script>
 </body>
 
 </html>

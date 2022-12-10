@@ -54,11 +54,45 @@
     color: midnightblue;
 } */
 
-.submission-form{
+.formerror{
+    color: red;
+}
+
+.form{
+    padding:50px;
+    align-items: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: midnightblue;
+    font-size: larger;
+}
+
+.form-div{
+    padding-bottom: 10px;
+}
+
+input{
+    padding-left: 10px;
+    display: block;
+    height: 70%;
+
+}
+
+.form-button{
+    border-radius: 4px;
+    height: 40px;
+    width: 70;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: midnightblue;
+    font-size: medium;
+    border-color: none;
+}
+
+/* .submission-form{
+    align-items: center;
     width:300px;
     Margin:10 px;
     font-size:18px;
-    /* border:2px solid#E74C3C; */
+    /* border:2px solid#E74C3C; 
     Padding:50px;
     color: midnightblue;
     }
@@ -75,7 +109,7 @@
     font-size:18px;
     border-radius:10px;
     }
-    input[type=”submit”]{
+    input{
     border:none;
     background-color:#343050;
     color:midnightblue;
@@ -86,10 +120,10 @@
     cursor:pointer;
     transition:0.3s
     }
-    input[type=”submit”]
+    input
     :hover{
     background-color:#3498DB;
-    }
+    } */
 
 @media only screen and (max-width: 760px){
     .image{

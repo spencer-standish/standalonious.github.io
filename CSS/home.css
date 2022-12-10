@@ -39,7 +39,7 @@ img {
 }
 .banner {
   padding: 10em 5em;
-  margin-top: -5em;
+  margin-top: 0em;
   line-height: 28px;
 }
 .paragraph {
@@ -140,6 +140,40 @@ article {
   border-radius: 15px;
   padding: 10px 30px 10px 0px;
   box-shadow: 0px 0px 23px #b97a049b;
+}
+
+.map1{
+  top: 20em; 
+  left: 19em; 
+  height: 30px; 
+  width: 30px;
+}
+.map2{
+  top: 22em; 
+  left: 31em; 
+  height: 30px; 
+  width: 30px;
+}
+
+.map3{
+  top: 13em; 
+  left: 19em; 
+  height: 30px; 
+  width: 30px;
+}
+
+.map4{
+  top: 24em; 
+  left: 39em; 
+  height: 30px; 
+  width: 30px;
+}
+
+.map5{
+  top: 22em; 
+  left: 43em; 
+  height: 30px; 
+  width: 30px;
 }
 }
 /* ------mobile view ----- */
@@ -284,5 +318,39 @@ article {
   .animalsort{
     display: grid;
     justify-content: space-around;
+  }
+  .map1{
+    top: 20em; 
+    left: 5em; 
+    height: 30px; 
+    width: 30px;
+  }
+
+  .map2{
+    top: 22em; 
+    left: 13em; 
+    height: 30px; 
+    width: 30px;
+  }
+
+  .map3{
+    top: 13em; 
+    left: 4em; 
+    height: 30px; 
+    width: 30px;
+  }
+
+  .map4{
+    top: 25em; 
+    left: 19em; 
+    height: 30px; 
+    width: 30px;
+  }
+
+  .map5{
+    top: 22em; 
+    left: 22em; 
+    height: 30px; 
+    width: 30px;
   }
 }
