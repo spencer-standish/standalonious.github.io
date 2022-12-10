@@ -2,7 +2,7 @@
 
 /* main header */
 .primary_head {
-  font-size: 2em;
+  font-size: 2.1em;
   font-family: century-gothic, sans-serif;
   font-weight: 600;
   color: #0d0f38;
@@ -31,7 +31,7 @@
 .paragraph {
   font-family: Verdana, sans-serif;
   color: #0d0f38;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 500;
   line-height: 30px;
 }
