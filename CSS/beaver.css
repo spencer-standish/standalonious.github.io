@@ -1,0 +1,557 @@
+.container {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows: 0.1fr 0.05fr 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-areas:
+    "nav nav nav nav"
+    ". header header ."
+    ". intro intro ."
+    ". distribution distribution ."
+    ". lifestyle lifestyle ."
+    ". diet diet ."
+    ". population population .";
+    grid-gap: 0.4rem;
+    font-family: 'Avenir', sans-serif;
+}
+body {
+    margin-top: 100px;
+    background-color: rgb(120, 208, 168);
+}
+#totopbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    transition-duration: 0.4s;
+}
+#totopbutton:hover {
+    cursor: pointer;
+    background-color: rgb(97, 97, 90);
+    color: white;
+}
+#funfactsbutton {
+    width: 100%;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #00ba28;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    margin-bottom: 30px;
+}
+#funfactsbutton:hover {
+    background-color: #00ba28; 
+    color: white;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 800px;
+    max-width: 80%;
+    font-size: 20px;
+    font-family: 'Avenir', sans-serif;
+}
+
+.popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.popup-header .title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.popup-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.popup-body {
+    padding: 10px 15px;
+}
+
+.popup-body ul {
+    color: black;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* NAV CSS */
+/* .item_nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "nav_img home services donation fauna about contact";
+    grid-gap: 10px;
+}
+#navigation {
+    box-shadow: 0px 6px 23px #0404046e;
+    background-color: white;
+    grid-area: nav;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .6em;
+}
+#navigation a {
+    text-decoration: none;
+    color: rgb(8, 7, 12);
+    font-family: century-gothic, sans-serif;
+    font-weight: 600;
+    font-size: .9em;
+    padding: 2em;
+}
+#nav_img {
+    grid-area: nav_img;
+    height: 80px; 
+    width: 220px;
+}
+#home {
+    grid-area: home;
+}
+#services {
+    grid-area: services;
+}
+#donation {
+    grid-area: donation;
+}
+#fauna {
+    grid-area: fauna;
+}
+#about {
+    grid-area: about;
+}
+#contact {
+    grid-area: contact;
+} */
+
+
+/* HEADER CSS */
+header {
+    grid-area: header;
+}
+header h1 {
+        text-align: center;
+        font-family: century-gothic, sans-serif;
+        font-weight: bolder;
+        color: #0D0F38;
+        font-size: 50px;
+}
+
+/* INTRO CSS */
+.item_intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.05fr 0.05fr;
+    grid-template-areas:
+    "beaver"
+    "stats"
+    "intro_p";
+    grid-gap: 10px;
+}
+#intro {
+    grid-area: intro;
+    background-color: #ddd;
+    border: 3px solid #0D0F38;
+    border-radius: 30px;
+}
+#intro_img {
+    grid-area: beaver;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+#intro_fig {
+    grid-area: stats;
+    border: 2px solid #0D0F38;
+    padding: 10px;
+    background-color: white;
+}
+#intro_fig table {
+    text-align: center;
+    margin: auto auto;
+}
+#intro_fig td {
+    color: rgb(65, 173, 65);
+    font-weight:900;
+    padding: 10px;
+}
+#intro_fig th {
+    color: grey;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+#intro_p {
+    grid-area: intro_p;
+    margin: 20px;
+}
+
+
+/* DISTRIBUTION CSS */
+.item_distribution {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 0.2fr 1fr 0.5fr;
+    grid-template-areas:
+    "dis_h2 dis_h2"
+    "dis_h3 ."
+    "dis_table dis_img"
+    "dis_p dis_p";
+    grid-gap: 10px;
+}
+#distribution {
+    grid-area: distribution;
+    background-color: #ddd;
+    border: 3px solid #0D0F38;
+    border-radius: 30px;
+}
+#dis_img {
+    grid-area: dis_img;
+    width: 70%;
+}
+#dis_h2 {
+    grid-area: dis_h2;
+    text-align: center;
+    text-decoration: underline;
+}
+#dis_h3 {
+    grid-area: dis_h3;
+    text-align: center;
+}
+#dis_table {
+    grid-area: dis_table;
+}
+#dis_table th {
+    color: grey;
+    text-align: right;
+    padding-right: 30px;
+}
+#dis_table tr {
+    color: rgb(121, 121, 214);
+}
+#dis_p {
+    grid-area: dis_p;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* LIFESTYLE CSS */
+.item_lifestyle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas:
+    "life_h2 life_h2"
+    "life_img life_p";
+    grid-gap: 10px;
+}
+#lifestyle {
+    background-color: #ddd;
+    grid-area: lifestyle;
+    border: 3px solid #0D0F38;
+    border-radius: 30px;
+}
+#life_h2 {
+    grid-area: life_h2;
+    text-align: center;
+    text-decoration: underline;
+}
+#life_img {
+    grid-area: life_img;
+    width: 100%;
+    padding-left: 20px;
+}
+#life_p {
+    grid-area: life_p;
+    margin: auto;
+    padding: 40px;
+}
+
+
+/* DIET CSS */
+.item_diet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+    grid-template-areas:
+    "diet_h2 diet_h2"
+    "diet_img diet_p";
+    grid-gap: 10px;
+}
+#diet {
+    background-color: #ddd;
+    grid-area: diet;
+    border: 3px solid #0D0F38;
+    border-radius: 30px;
+}
+#diet_h2 {
+    grid-area: diet_h2;
+    text-align: center;
+    text-decoration: underline;
+}
+#diet_img {
+    grid-area: diet_img;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+#diet_p {
+    grid-area: diet_p;
+    margin: auto;
+    padding: 40px;
+}
+
+
+/* POPULATION CSS */
+.item_population {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.05fr;
+    grid-template-areas:
+    "pop_h2 pop_h2"
+    "pop_img pop_section";
+    grid-gap: 10px;
+}
+#population {
+    background-color: #ddd;
+    grid-area: population;
+    border: 3px solid #0D0F38;
+    border-radius: 30px;
+    margin-bottom: -75px;
+}
+#pop_h2 {
+    grid-area: pop_h2;
+    text-align: center;
+    text-decoration: underline;
+}
+#pop_img {
+    grid-area: pop_img;
+    width: 100%;
+    padding-left: 20px;
+}
+#pop_section {
+    grid-area: pop_section;
+    margin: auto;
+    padding: 20px;
+    margin: 30px;
+}
+
+
+/* FOOTER CSS */
+/* footer {
+    grid-area: footer;
+}
+footer ul {
+    color: white;
+    line-height: 2em;
+}
+footer li a { 
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.66);
+    font-family: century-gothic, sans-serif;
+    font-weight: 600;
+    font-size: .8em;
+}
+footer section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+.tertiary_head {
+    color: white;
+    margin-left: 2rem;
+}
+a:hover,a:focus {
+    color: rgb(85, 161, 136);
+}
+a:visited {
+    color: rgb(67, 156, 126);
+}
+.fa-facebook::before {
+    color: white;
+    font-size: 25px;
+    padding-right: 21px;
+    vertical-align: sub;
+}
+.fa-youtube::before {
+    color: white;
+    font-size: 25px;
+    padding-right: 15px;
+    vertical-align: sub;
+
+}
+.fa-instagram::before {
+    color: white;
+    font-size: 25px;
+    padding-right: 15px;
+    vertical-align: sub;
+}
+footer a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.66);
+    font-family: century-gothic, sans-serif;
+    font-weight: 600;
+    font-size: .8em;
+    line-height: 20px;
+} */
+
+
+/* RWD */
+@media only screen and (max-width: 760px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+        "nav"
+        "header"
+        "intro"
+        "distribution"
+        "lifestyle"
+        "diet"
+        "population";
+    }
+
+    /* nav css */
+    /* .item_nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "nav_img"
+        "home" 
+        "services"
+        "donation" 
+        "fauna" 
+        "about" 
+        "contact";
+        grid-gap: 10px;
+    }
+    #navigation {
+        box-shadow: 0px 6px 23px #0404046e;
+        background-color: white;
+        grid-area: nav;
+        padding: .6em;
+    }
+    #navigation a {
+        text-decoration: none;
+        color: rgb(8, 7, 12);
+        font-family: century-gothic, sans-serif;
+        font-weight: 600;
+        font-size: .9em;
+        padding: 2em;
+    }
+    #nav_img {
+        grid-area: nav_img;
+        height: 80px; 
+        width: 220px;
+    } */
+
+    /* header css*/
+    header {
+        grid-area: header;
+    }
+    header h1 {
+            text-align: center;
+            font-family: century-gothic, sans-serif;
+            font-weight: bolder;
+            color: #0D0F38;
+            font-size: 50px;
+    }
+
+    /* INTRO CSS */
+    .item_intro {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.05fr 0.05fr;
+    grid-template-areas:
+    "beaver"
+    "stats"
+    "intro_p";
+    grid-gap: 10px;
+    }
+    #intro {
+    grid-area: intro;
+    background-color: white;
+    border: 2px solid #0D0F38;
+    }
+    #intro_img {
+    grid-area: beaver;
+    }
+    #intro_fig {
+    grid-area: stats;
+    border: 2px solid #0D0F38;
+    padding: 10px;
+    }
+    #intro_fig table {
+    text-align: center;
+    margin: auto auto;
+    }
+    #intro_fig td {
+    color: rgb(65, 173, 65);
+    font-weight:900;
+    padding: 10px;
+    }
+    #intro_fig th {
+    color: grey;
+    padding-left: 35px;
+    padding-right: 35px;
+    }
+    #intro_p {
+    grid-area: intro_p;
+    margin: 20px;
+    }
+}

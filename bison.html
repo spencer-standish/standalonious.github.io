@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bison</title>
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="CSS/bison.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
@@ -140,29 +139,25 @@
             </section>
         </div>
     </div>
-    <button id="funfactsbutton" onclick="alertRandomFunFact()">FUN FACTS FOR KIDS</button>
+    <button id="funfactsbutton" data-popup-target="#popup">FUN FACTS FOR KIDS</button>
+    <div class="popup" id="popup">
+    <div class="popup-header">
+        <div class="title">Fun Facts About Bisons</div>
+        <button data-close-button class="close-button">&times;</button>
+    </div>
+    <div class="popup-body">
+        <ul>
+            <li>The groups that bison create are called obstinacies, gangs, or herds.</li>
+            <li>Hunch on its back is nothing but a bunch of muscles. The hunch also helps bison to move into the snowpack.</li>
+            <li>Bison is an excellent jumper, able to jump up to 6 feet off the ground.</li>
+            <li>Along with jumping, bison are excellent in running and swimming.</li>
+        </ul>
+    </div>
+    </div>
+    <div id="overlay"></div>
     <button id="totopbutton" onclick="toTop()">BACK TO TOP</button>
     <div class="footerclass"></div>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="script/bison.js"></script>
   </body>
 </html>
-<script type="text/javascript">
-    $(function(){
-        $(".navclass").load("navigation.html");
-     } );
-     $(function(){
-        $(".footerclass").load("footer.html");
-     } );
-    
-     // function that brings you to top of page
-    const toTop = () => window.scrollTo({top: 0, behavior: 'smooth'});
-    // function that alerts a random fun fact
-    alertRandomFunFact = function() {
-    let facts = new Array();
-        facts[0] = "The groups that bison create are called obstinacies, gangs, or herds.";
-        facts[1] = "Hunch on its back is nothing but a bunch of muscles. The hunch also helps bison to move into the snowpack.";
-        facts[2] = "Bison is an excellent jumper, able to jump up to 6 feet off the ground.";
-        facts[3] = "Along with jumping, bison are excellent in running and swimming.";
-        let rand = Math.floor(Math.random()*facts.length);
-        window.alert(facts[rand]);
-    }
-</script>
