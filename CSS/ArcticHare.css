@@ -67,6 +67,8 @@ h2{
     position: relative;
     top: -50px; */
     margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
 }
 
 /* Location left para */
@@ -74,7 +76,7 @@ h2{
     padding-top: 50px;
     display: flex;
     margin-bottom: 50px;
-    margin-left: 75px;
+    padding-left: 75px;
 }
 
 /* Left img */
@@ -82,14 +84,19 @@ h2{
     /* float: left; */
     margin-left: 75px;
     margin-right: 100px;
+    margin-bottom: 40px;
 }
 
 /* Right para */
 .class5{
-    width: 94%;
+    width: 100%;
     padding-top: 40px;
     display: flex;
     margin-bottom: 50px;
+}
+
+.class5 p{
+    width: 94%;
 }
 
 /* Right img */
@@ -99,15 +106,20 @@ h2{
     /* left: 100px; */
     /* padding-left: 100px; */
     margin-left: 100px;
+    margin-right: 40px;
 }
 
 /* Left para */
 .class7{
-    width: 90%;
+    width: 100%;
     padding-top: 40px;
     display: flex;
-    margin-bottom: 50px;
-    margin-left: 75px;
+    padding-bottom: 50px;
+    padding-left: 75px;
+}
+
+.class7 p {
+    width: 90%;
 }
 
 /* Left img */
@@ -120,18 +132,22 @@ h2{
 
 /* Right Para */
 .class9{
-    width: 94%;
+    width: 100%;
     display: flex;
-    margin-left: 75px;
+    padding-left: 75px;
     margin-bottom: 10em;
+}
+
+.class9 p{
+    width: 94%;
 }
 
 /* Right Img */
 .class10{
     /* float: right; */
     margin-left: 100px;
-    margin-top: 170px;
-
+    margin-top: 100px;
+    margin-right: 40px;
 }
 
 .class9 li{
@@ -146,7 +162,7 @@ h2{
     height: 20px;   
     width: 20px;    
     background-size: 20px;   
-    background-image: url('/Images/1076826.png') ;
+    background-image: url('../Images/1076826.png') ;
     background-repeat: no-repeat;   
     margin-right: 10px;
     background-position: center center;
@@ -157,6 +173,11 @@ h2{
     min-width: 1360px;
     max-width: 1400px;
 } */
+
+.class1:hover, .class3:hover, .class5:hover, .class7:hover, .class9:hover{
+    background-color: rgb(254, 195, 254);
+    border: 3px solid rgb(128, 0, 109);
+}
 
 @media only screen and (max-width: 950px) {
     body{

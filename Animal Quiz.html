@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animal Quiz</title>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="Images/Thumbnail.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Satisfy&family=Signika+Negative&display=swap" rel="stylesheet">
+        <meta
+          name="description"
+          content="Animal Quiz">
+        <meta
+          name="keywords"
+          content="animal, quiz">
+        <link rel="stylesheet" href="CSS/home.css">
+        <link rel="stylesheet" href="CSS/footer.css">
+        <link rel="stylesheet" href="CSS/common.css">
+        <link rel="stylesheet" href="CSS/header.css">
+        <link rel="stylesheet" href="CSS/AnimalQuiz.css">
+    </head>
+    <body>
+        <div class="navclass"></div>
+        <section class="home">
+            <header>
+                <h1>Welcome to CANSAVE Animal Quiz</h1>
+            </header>
+            <div class="panel">
+                <div class="result">
+        
+                </div>
+                <div class="question-container" id="question">
+                    Question goes here.
+                </div>
+                <div class="option-container">
+                    <button class="option" onclick="" id="op1" >option1</button>
+            
+                    <button class="option" id="op2" >option2</button>
+            
+                    <button class="option" id="op3">option3</button>
+            
+                    <button class="option" id="op4">option4</button>
+                </div>
+                <div class="navigation">
+                    <button class="evaluate">Evaluate</button>
+                    <button class="next">Next</button>
+                </div>
+            </div>
+        </section>
+        <div class="footerclass"></div>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="/script/quiz.js"></script>
+    </body>
+</html>
+    
+<script type="text/javascript">
+    $(function () {
+    $(".navclass").load("navigation.html");
+    });
+    $(function () {
+    $(".footerclass").load("footer.html");
+    });
+</script>
+    <script src="/script/quiz.js"></script>

@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Satisfy&family=Signika+Negative&display=swap" rel="stylesheet">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <meta
       name="description"
       content="Animal Merchandise">
@@ -22,11 +21,12 @@
   </head>
 
   <body>
-    <script src="/script/addtocart"></script>
     <div class="navclass"></div>
     <section class="home">
-        <h1>WELCOME TO ANIMAL MERCHANDISE</h1><br>
-        <h2>View our limited edition t-shirts, caps, bags and more!</h2>
+        <header>
+            <h1>WELCOME TO ANIMAL MERCHANDISE</h1><br>
+            <h2>View our limited edition t-shirts, caps, bags and more!</h2>
+        </header>
         <main>
             <!-- T-Shirt -->
             <div id="image1">
@@ -298,11 +298,11 @@
                     <br><br><button type="submit" id="addtocart8"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
-            <!-- Keychain -->
+            <!-- Clock -->
             <div id="image9">
-                <h3>Keychain</h3>
+                <h3>Clock</h3>
                 <div class="options">
-                    <!-- Keychain Quantity selection-->
+                    <!-- Clock Quantity selection-->
                     Quantity
                     <select class="quantity" size="1">
                         <option value="Select quantity">Select quantity</option>
@@ -312,7 +312,7 @@
                         <option value="4">4</option>
                         <option value="5">5</option>
                     </select>
-                    <!-- Keychain Color selection-->
+                    <!-- Clock Color selection-->
                     &nbsp; Color
                     <select class="color" size="1">
                         <option value="Select color">Select color</option>
@@ -352,12 +352,17 @@
                     <br><br><button type="submit" id="addtocart10"><img src="Images/cart.png" height="30" width="30" alt="Cart"> Add to Cart</button>
                 </div>
             </div>
-            <a href="/Thankyou.html">
-                <button type="submit" id="purchase">Purchase</button>
-            </a>
+
+            <footer>
+                <a href="/Thankyou.html">
+                `   <button type="submit" id="purchase">Purchase</button>
+                </a>
+            </footer>
         </main> 
     </section>
     <div class="footerclass"></div>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="/script/addtocart"></script>
   </body>
 </html>
 
