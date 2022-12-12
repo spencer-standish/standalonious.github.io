@@ -1,4 +1,8 @@
-'use strict';
+"use strict";
+
+$(function () {
+  $("#accordion").accordion();
+});
 
 //declaring an array of images
 let myImagesArray = [

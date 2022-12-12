@@ -18,6 +18,10 @@
       animals,responsibility,NGO,Animal protection act,
       Raindeer,whales,rabits,dogs,moose,beevers"
     />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
     <link rel="stylesheet" href="CSS/page2_brownbear.css" />
     <link rel="stylesheet" href="CSS/header.css" />
     <link rel="stylesheet" href="CSS/footer.css" />
@@ -198,37 +202,41 @@
           />
         </section>
         <section class="facts">
-          <div>
-            <h2>Fun Facts</h2>
-            <ul>
-              <li>
-                Brown bears use their claws to dig comfortable caves, where they
-                spend the winter. As they enter a dormant state, their
-                heartbeats drop to 10 beats per minute.
-              </li>
-              <li>
-                Females of Brown bear give birth during the winter, being
-                asleep. Newborn cubs feed upon maternal milk and warm in fur of
-                their mother until the spring comes, and the female wakes up to
-                see her babies.
-              </li>
-              <li>
-                These animals are highly intelligent: they use tools in their
-                daily life from hunting to playing; they have large brain,
-                compared to their body size; they have good memory and excellent
-                navigation skills.
-              </li>
-              <li>
-                They are able to smell cubs, a mate, predators or food from as
-                far as miles away. In addition, they have excellent eyesight,
-                which helps them identify ripe fruits.
-              </li>
-              <li>The Brown bear is the national animal of Finland.</li>
-              <li>
-                The Brown bear is also a European Protected Species, having
-                protection in the countries of the European Union.
-              </li>
-            </ul>
+          <h2>Fun Facts</h2>
+          <div id="accordion">
+            <h3>Fact 1</h3>
+            <div>
+              Brown bears use their claws to dig comfortable caves, where they
+              spend the winter. As they enter a dormant state, their heartbeats
+              drop to 10 beats per minute.
+            </div>
+            <h3>Fact 2</h3>
+            <div>
+              Females of Brown bear give birth during the winter, being asleep.
+              Newborn cubs feed upon maternal milk and warm in fur of their
+              mother until the spring comes, and the female wakes up to see her
+              babies.
+            </div>
+            <h3>Fact 3</h3>
+            <div>
+              These animals are highly intelligent: they use tools in their
+              daily life from hunting to playing; they have large brain,
+              compared to their body size; they have good memory and excellent
+              navigation skills.
+            </div>
+            <h3>Fact 4</h3>
+            <div>
+              They are able to smell cubs, a mate, predators or food from as far
+              as miles away. In addition, they have excellent eyesight, which
+              helps them identify ripe fruits.
+            </div>
+            <h3>Fact 5</h3>
+            <div>The Brown bear is the national animal of Finland.</div>
+            <h3>Fact 6</h3>
+            <div>
+              The Brown bear is also a European Protected Species, having
+              protection in the countries of the European Union.
+            </div>
           </div>
           <div id="slideshow_images">
             <img
@@ -245,6 +253,7 @@
     <!-- content ends -->
     <!-- footer -->
     <div class="footerclass"></div>
+    <!-- Java Script -->
     <script src="../script/brownbear.js"></script>
     <script>
       $(function () {
@@ -254,5 +263,7 @@
         $(".footerclass").load("footer.html");
       });
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   </body>
 </html>
