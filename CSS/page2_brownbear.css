@@ -7,7 +7,7 @@ html {
   background-size: cover;
   background-attachment: fixed;
 }
-body{
+body {
   margin: auto;
 }
 .section1 {
@@ -39,34 +39,31 @@ body{
   flex-basis: 20em;
   padding: 20px 0;
 }
-.distribution {
-  padding: 50px 8px;
+.distribution,
+.population,
+.mating {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row-reverse;
   align-items: center;
-  column-gap: 32px;
+  column-gap: 23px;
+  padding: 25px 10px;
+}
+.habitat,
+.diet,
+.facts {
+  display: flex;
+  align-items: center;
+  column-gap: 23px;
+  padding: 25px 10px;
 }
 .distpara {
   background-color: #bfa58d;
   border-radius: 9px;
   padding-top: 10px;
 }
-.habitat {
-  display: flex;
-  padding: 50px 8px;
-  flex-direction: row-reverse;
-  align-items: center;
-  column-gap: 26px;
-}
 .habitatpara {
   background-color: #487985;
   border-radius: 9px;
-}
-.population {
-  display: flex;
-  align-items: center;
-  padding: 50px 8px;
-  column-gap: 32px;
 }
 .poppara {
   background-color: #6f5441;
@@ -81,22 +78,9 @@ body{
   width: 760px;
   height: 400px;
 }
-.diet {
-  padding: 50px 8px;
-  display: flex;
-  align-items: center;
-  column-gap: 32px;
-  flex-direction: row-reverse;
-}
 .dietpara {
   background-color: #6e7748;
   border-radius: 9px;
-}
-.mating {
-  display: flex;
-  align-items: center;
-  column-gap: 32px;
-  padding: 50px 8px;
 }
 .matingpara {
   background-color: #35652bdb;
@@ -113,14 +97,12 @@ h1 {
   text-shadow: 2px 3px #af9898;
   line-height: 1em;
 }
-
 .box ul {
   list-style-type: none;
 }
-
 .facts ul {
   list-style-image: url(../images/brownbear/bear-icon.png);
-  padding: 0px 4em 19px;
+  padding: 0px 5px 19px 4em;
 }
 .facts li {
   color: #0d0f38;
@@ -149,6 +131,9 @@ h1 {
   font-size: 20px;
   padding-bottom: 10px;
 }
+#slideshow_images {
+  margin-right: 1em;
+}
 
 /* ----- mobile view ------- */
 @media screen and (max-width: 760px) {
@@ -161,12 +146,19 @@ h1 {
   .habitat,
   .population,
   .diet,
-  .mating {
+  .mating,
+  .facts {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
+    margin: 20px 15px;
   }
   img {
-    padding-top: 3.5em;
+    margin-top: 2em;
+  }
+  #mainimage {
+    padding-top: 0;
+    margin-left: 0;
   }
   .value {
     font-size: x-large;
@@ -175,5 +167,11 @@ h1 {
   .heading {
     font-size: larger;
     text-align: center;
+  }
+  #slideshow {
+    margin-top: 0;
+  }
+  main {
+    margin-top: 0;
   }
 }

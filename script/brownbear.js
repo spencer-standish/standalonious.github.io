@@ -2,16 +2,16 @@
 
 //declaring an array of images
 let myImagesArray = [
-  "Images/beluga/slideshow/p1.jpg",
-  "Images/beluga/slideshow/p2.jpg",
-  "Images/beluga/slideshow/p3.jpg",
-  "Images/beluga/slideshow/p4.jpg",
-  "Images/beluga/slideshow/p5.jpg",
-  "Images/beluga/slideshow/p6.jpg",
-  "Images/beluga/slideshow/p7.jpg",
-  "Images/beluga/slideshow/p8.jpg",
-  "Images/beluga/slideshow/p9.jpg",
-  "Images/beluga/slideshow/p10.jpg",
+  "Images/brownbear/slideshow/p1.jpg",
+  "Images/brownbear/slideshow/p2.jpg",
+  "Images/brownbear/slideshow/p3.jpg",
+  "Images/brownbear/slideshow/p4.jpg",
+  "Images/brownbear/slideshow/p5.jpg",
+  "Images/brownbear/slideshow/p6.jpg",
+  "Images/brownbear/slideshow/p7.jpg",
+  "Images/brownbear/slideshow/p8.jpg",
+  "Images/brownbear/slideshow/p9.jpg",
+  "Images/brownbear/slideshow/p10.jpg",
 ];
 
 //making an automatic slide to display the images

@@ -6,7 +6,7 @@ html {
   background-size: cover;
   background-attachment: fixed;
 }
-body{
+body {
   margin: 0 auto;
 }
 .section1 {
@@ -29,56 +29,49 @@ body{
 #intropara {
   flex-basis: 50em;
 }
-#intropara p{
+#intropara p {
   font-size: 18px;
   line-height: 30px;
-
 }
 .box {
   flex-basis: 20em;
 }
-.distribution {
+.distribution,
+.population,
+.mating {
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  column-gap: 32px;
-  padding: 50px 8px;
+  column-gap: 23px;
+  padding: 30px 10px;
+}
+.habitat,
+.diet {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  column-gap: 23px;
+  padding: 30px 10px;
 }
 .distpara {
   background-color: #ff0100f5;
   border-radius: 9px;
   color: white;
 }
-.habitat {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  column-gap: 26px;
-  padding: 50px 8px;
-}
 .habitatpara {
   background-color: #a4b066;
   border-radius: 9px;
-}
-.population {
-  display: flex;
-  align-items: center;
-  padding: 50px 5px;
-  column-gap: 32px;
-  padding: 50px 8px;
 }
 .poppara {
   background-color: #9f7950e3;
   border-radius: 9px;
   color: beige;
 }
-img {
+#fullContent img {
   width: 540px;
   height: 310px;
   border-radius: 9px;
 }
 #mainimage {
-  margin: auto;
   width: 730px;
   height: 390px;
 }
@@ -86,22 +79,9 @@ img {
   width: 400px;
   height: 600px;
 }
-.diet {
-  display: flex;
-  padding: 50px 8px;
-  align-items: center;
-  column-gap: 32px;
-  flex-direction: row-reverse;
-}
 .dietpara {
   background-color: #8bbd35d4;
   border-radius: 9px;
-}
-.mating {
-  display: flex;
-  align-items: center;
-  column-gap: 32px;
-  padding: 50px 8px;
 }
 .matingpara {
   background-color: #5d849fe8;
@@ -134,15 +114,6 @@ h1 + p {
   list-style-type: none;
   padding: 25px 0;
 }
-.facts ul {
-  list-style-image: url(../images/moose/moose-icon.jpg);
-  padding: 0px 4em 19px;
-}
-.facts li {
-  color: #0d0f38;
-  font-size: 18px;
-  padding: 8px 10px;
-}
 #fullContent h2 {
   font-size: 2em;
   font-weight: 700;
@@ -165,6 +136,35 @@ h1 + p {
   font-size: 20px;
   padding-bottom: 10px;
 }
+#facts h3 {
+  cursor: pointer;
+  margin: 10px 4em;
+  background-image: linear-gradient(to left, rgb(122 115 103 / 0%), #509f58);
+  height: 2em;
+  border-radius: 8px;
+  padding-left: 9px;
+  padding-top: 3px;
+}
+#facts a {
+  color: black;
+  text-decoration: none;
+}
+#facts div {
+  display: none;
+}
+#facts div.open {
+  display: block;
+}
+#facts img {
+  height: 25px;
+  width: 25px;
+  border-radius: 0;
+  padding-right: 12px;
+  padding-top: 5px;
+}
+#facts p {
+  margin: 0 6em;
+}
 
 /* ----- mobile view ------- */
 @media screen and (max-width: 760px) {
@@ -180,9 +180,20 @@ h1 + p {
   .mating {
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0;
+    margin: 20px 15px;
   }
-  img {
-    padding-top: 3.5em;
+  #fullContent img {
+    margin-top: 2em;
+  }
+  #mainimage {
+    width: 540px;
+    height: 310px;
+    padding-top: 0;
+    margin-left: 0;
+  }
+  #facts img {
+    margin-top: 0;
   }
   .value {
     font-size: x-large;
@@ -191,5 +202,8 @@ h1 + p {
   .heading {
     font-size: larger;
     text-align: center;
+  }
+  main {
+    margin-top: 0;
   }
 }
