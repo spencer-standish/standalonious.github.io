@@ -14,6 +14,7 @@
 }
 .factslist h2{
   cursor: pointer;
+  font-size: 1.4rem;
 font-family: century-gothic, sans-serif;
 }
 .factslist div{
@@ -236,6 +237,7 @@ background-color: blueviolet;
     color: white;
 }
 .factslist h2{
+  font-size: 1.4rem;
 font-family: century-gothic, sans-serif;
 }
 .factslist div{
